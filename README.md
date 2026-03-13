@@ -26,7 +26,7 @@ Your task (any task)
    Final output → your project directory
 ```
 
-To stress-test this, we gave it an absurd prompt: *"Build Minecraft from scratch."* One sentence. It produced:
+To stress-test this, we gave it an absurd prompt: *"Build Minecraft from scratch"* — a ~600-word spec with technical constraints and success criteria ([full prompt](examples/prompts/minecraft-from-scratch.md)). It produced:
 - 60 Rust source files across 11 modules (renderer, physics, world gen, mobs, inventory, UI...)
 - Raw OpenGL 3.3 — no game engine, no voxel libraries
 - Procedural terrain with caves, trees, ore veins, water
