@@ -129,7 +129,7 @@ The swarm chose Rust + raw OpenGL on its own. Produced 60 source files, 16,627 l
 
 ![Build 1](images/Build1.png)
 
-**Build 5** — Two fixes later. Textured blocks, procedural terrain, water with transparency, ore veins in cave walls, trees, distance fog. Most of this was built in the first pass — we just couldn't see it until mouse look was fixed and we turned the camera around.
+**Build 5** — Two fixes later. Really the same as Build 3 but with working mouse look — once we could actually turn the camera around, we discovered the swarm had already built water with transparency, ore veins in cave walls, varied terrain, and more. It was all there the whole time. We were judging the output through a keyhole.
 
 ![Build 5](images/Build5.png)
 
