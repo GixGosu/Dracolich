@@ -48,9 +48,9 @@ Dracolich is the 6th generation of a recursive agent system:
 
 Dracolich wrote itself. The `evolve.sh` script runs self-improvement loops:
 
-- Every hour, the current version analyzes its own source code and writes an improved version
+- Every hour, the current version can analyze its own source code and write an improved version
 - 8-hour cap per evolution session
-- Evolved from v1 → v12 autonomously (v12 is this release)
+- Evolved from v1 → v12 autonomously (v12 is this release) before hitting a plateau
 - 23/23 tests passing, clean compilation
 
 ## Architecture
