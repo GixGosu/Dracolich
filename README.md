@@ -8,8 +8,10 @@ No agent can both propose and approve. Every decomposition gets challenged. Ever
 
 ## What It Does
 
+Give it any task — build software, research a topic, analyze a codebase, write documentation. Dracolich figures out what agents it needs, creates them, and runs them in parallel with governance oversight.
+
 ```
-"Build Minecraft from scratch"
+Your task (any task)
          ↓
    [META_DECOMPOSER] → breaks task into dependency DAG, designs agent team
          ↓
@@ -24,12 +26,14 @@ No agent can both propose and approve. Every decomposition gets challenged. Ever
    Final output → your project directory
 ```
 
-One prompt produced:
+To stress-test this, we gave it an absurd prompt: *"Build Minecraft from scratch."* One sentence. It produced:
 - 60 Rust source files across 11 modules (renderer, physics, world gen, mobs, inventory, UI...)
-- Raw OpenGL 3.3 — no game engine
+- Raw OpenGL 3.3 — no game engine, no voxel libraries
 - Procedural terrain with caves, trees, ore veins, water
 - First-person movement, jumping, collision detection
 - 48 inter-agent documentation files the agents wrote for *each other*
+
+The Minecraft clone isn't the point. It's the stress test. The point is: one prompt in, working project out.
 
 ## How Agents Work
 
