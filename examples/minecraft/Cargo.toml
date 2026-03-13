@@ -1,0 +1,42 @@
+[package]
+name = "voxel-game"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+# OpenGL bindings
+gl = "0.14"
+
+# Math library
+glam = "0.24"
+
+# Noise generation for terrain
+noise = "0.8"
+
+# Image loading for textures
+image = "0.24"
+
+# Windowing and OpenGL context
+winit = "0.29"
+glutin = "0.31"
+glutin-winit = "0.4"
+raw-window-handle = "0.5"
+
+# Audio playback
+rodio = "0.17"
+
+# Random number generation
+rand = "0.8"
+
+[[bin]]
+name = "generate_atlas"
+path = "src/assets/generate_atlas.rs"
+
+[[example]]
+name = "audio_usage"
+path = "examples/audio_usage.rs"
+
+[profile.release]
+opt-level = 3
+lto = true
+codegen-units = 1

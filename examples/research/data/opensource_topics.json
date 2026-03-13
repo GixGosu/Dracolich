@@ -1,0 +1,1003 @@
+{
+  "metadata": {
+    "researcher": "OPENSOURCE_RESEARCHER",
+    "date": "2026-03-11",
+    "total_topics": 35,
+    "frameworks_covered": [
+      "AutoGPT",
+      "CrewAI",
+      "LangGraph",
+      "AutoGen",
+      "MetaGPT",
+      "CAMEL",
+      "AgentVerse",
+      "OpenAI Swarm"
+    ],
+    "methodology": "Web search of GitHub repositories, documentation, and research papers from 2024-2026"
+  },
+  "topics": [
+    {
+      "id": 1,
+      "name": "AutoGPT Platform Architecture",
+      "description": "Autonomous agent lifecycle management with continuous workflows, tool integration, and multi-agent collaboration.",
+      "relevance_score": 9,
+      "state": "mature",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "AutoGPT",
+          "url": "https://github.com/Significant-Gravitas/AutoGPT",
+          "stars": "165k+",
+          "description": "The most popular autonomous agent repo with production deployments across industries"
+        },
+        {
+          "name": "AgentGPT",
+          "url": "https://github.com/reworkd/AgentGPT",
+          "description": "Browser-based autonomous agent assembly and deployment"
+        }
+      ],
+      "key_insights": [
+        "Transformed from experimental GitHub project to production-ready platform in 2025",
+        "Supports episodic and semantic memory for complex task execution",
+        "autogpt_platform folder contains in-development agent deployment infrastructure"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "CrewAI Role-Playing Agents",
+      "description": "Framework for orchestrating role-playing autonomous agents with collaborative intelligence and precise control.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "crewAI",
+          "url": "https://github.com/crewAIInc/crewAI",
+          "description": "Framework for orchestrating role-playing, autonomous AI agents"
+        },
+        {
+          "name": "crewAI-examples",
+          "url": "https://github.com/crewAIInc/crewAI-examples",
+          "description": "Collection showing how to use CrewAI framework to automate workflows"
+        },
+        {
+          "name": "Multi-Agent-Systems-with-crewAI",
+          "url": "https://github.com/akj2018/Multi-AI-Agent-Systems-with-crewAI",
+          "description": "Automate complex business workflows with role-specific AI agents"
+        }
+      ],
+      "key_insights": [
+        "Lean, standalone Python framework built from scratch (not dependent on LangChain)",
+        "100k+ developers certified through community courses",
+        "CrewAI Flows provide enterprise architecture for production multi-agent systems",
+        "Supports sequential, parallel, and hierarchical task coordination"
+      ]
+    },
+    {
+      "id": 3,
+      "name": "LangGraph Stateful Workflows",
+      "description": "Low-level orchestration framework for building stateful, multi-agent systems with complex workflows and durable execution.",
+      "relevance_score": 10,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "langgraph",
+          "url": "https://github.com/langchain-ai/langgraph",
+          "description": "Build resilient language agents as graphs"
+        },
+        {
+          "name": "langgraph-supervisor-py",
+          "url": "https://github.com/langchain-ai/langgraph-supervisor-py",
+          "description": "Hierarchical multi-agent systems with supervisor coordination"
+        },
+        {
+          "name": "langgraph-swarm-py",
+          "url": "https://github.com/langchain-ai/langgraph-swarm-py",
+          "description": "Swarm-style multi-agent systems with dynamic handoffs"
+        },
+        {
+          "name": "multi_agent_workflow_demo_in_langgraph",
+          "url": "https://github.com/extrawest/multi_agent_workflow_demo_in_langgraph",
+          "description": "Collection showcasing different multi-agent workflow patterns"
+        }
+      ],
+      "key_insights": [
+        "Trusted by Klarna, Replit, and Elastic for production deployments",
+        "Enables single, multi-agent, and hierarchical control flows in one framework",
+        "Durable execution persists through failures",
+        "2025 shift toward agentic systems with coordinated agent networks"
+      ]
+    },
+    {
+      "id": 4,
+      "name": "AutoGen Multi-Agent Conversations",
+      "description": "Microsoft's programming framework for agentic AI with customizable conversable agents integrating LLMs, tools, and humans.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "autogen",
+          "url": "https://github.com/microsoft/autogen",
+          "description": "A programming framework for agentic AI"
+        },
+        {
+          "name": "agent-framework",
+          "url": "https://github.com/microsoft/agent-framework",
+          "description": "Framework for building, orchestrating and deploying AI agents with Python and .NET support"
+        }
+      ],
+      "key_insights": [
+        "AutoGen and Semantic Kernel merging into unified Microsoft Agent Framework",
+        "AutoGen continues with stable API and critical bug fixes",
+        "AutoGen Studio provides no-code GUI for building multi-agent apps",
+        "Magentic-One is state-of-the-art multi-agent team built on AutoGen",
+        "Weekly office hours, Discord community, and comprehensive documentation"
+      ]
+    },
+    {
+      "id": 5,
+      "name": "MetaGPT Software Company Simulation",
+      "description": "Multi-agent framework simulating entire software company with specialized roles using SOPs encoded as prompt sequences.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "MetaGPT",
+          "url": "https://github.com/FoundationAgents/MetaGPT",
+          "description": "Multi-Agent Framework: First AI Software Company, Towards Natural Language Programming"
+        }
+      ],
+      "key_insights": [
+        "Takes one line requirement and outputs PRD, design, tasks, and repo",
+        "Includes product managers, architects, project managers, and engineers",
+        "Accepted as oral presentation (top 1.2%) at ICLR 2024",
+        "Assembly line paradigm assigns diverse roles to agents",
+        "Uses Standardized Operating Procedures (SOPs) to reduce errors"
+      ]
+    },
+    {
+      "id": 6,
+      "name": "CAMEL Communicative Agents",
+      "description": "Framework for communicative agents exploring 'mind' of LLM society with role-playing and inception prompting.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "coordination",
+      "github_references": [
+        {
+          "name": "camel",
+          "url": "https://github.com/camel-ai/camel",
+          "description": "The first and the best multi-agent framework. Finding the Scaling Law of Agents"
+        },
+        {
+          "name": "multi-agent-streamlit-ui",
+          "url": "https://github.com/camel-ai/multi-agent-streamlit-ui",
+          "description": "CAMEL framework-based multi-agent system for task-driven environments"
+        }
+      ],
+      "key_insights": [
+        "First framework focused on scaling laws of agents",
+        "Supports systems with millions of agents",
+        "ChatAgent class with role, memory, tools, and flexible communication",
+        "Stateful memory enables multi-step interactions",
+        "Used in infrastructure automation, productivity, and research"
+      ]
+    },
+    {
+      "id": 7,
+      "name": "AgentVerse Task-Solving and Simulation",
+      "description": "Framework facilitating deployment of LLM-based agents in task-solving and simulation environments.",
+      "relevance_score": 7,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "AgentVerse",
+          "url": "https://github.com/OpenBMB/AgentVerse",
+          "description": "Designed to facilitate deployment of multiple LLM-based agents in task-solving and simulation"
+        }
+      ],
+      "key_insights": [
+        "Provides two frameworks: task-solving and simulation",
+        "Includes NLP classroom, prisoner's dilemma, and software design simulations",
+        "Software design example shows code writer, tester, and reviewer collaboration",
+        "Flexible framework for building custom multi-agent environments"
+      ]
+    },
+    {
+      "id": 8,
+      "name": "OpenAI Swarm Lightweight Orchestration",
+      "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration with agents and handoffs primitives.",
+      "relevance_score": 7,
+      "state": "emerging",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "swarm",
+          "url": "https://github.com/openai/swarm",
+          "description": "Educational framework exploring ergonomic, lightweight multi-agent orchestration"
+        },
+        {
+          "name": "agency-swarm",
+          "url": "https://github.com/VRSEN/agency-swarm",
+          "description": "Reliable Multi-Agent Orchestration Framework"
+        },
+        {
+          "name": "durable-swarm",
+          "url": "https://github.com/dbos-inc/durable-swarm",
+          "description": "Augment Swarm with durable execution for reliable multi-agent systems"
+        }
+      ],
+      "key_insights": [
+        "Now replaced by OpenAI Agents SDK (production-ready evolution)",
+        "Runs almost entirely on client, no state storage between calls",
+        "Two primitive abstractions: Agents and handoffs",
+        "Agency Swarm extends OpenAI Agents SDK with specialized features",
+        "Durable Swarm adds resilience to any failure"
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Multi-Agent Memory Systems with RAG",
+      "description": "Agentic RAG integrates retrieval capabilities into agent decision-making with vector databases and graph traversal.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "Referenced in research",
+          "url": "https://machinelearningmastery.com/vector-databases-vs-graph-rag-for-agent-memory-when-to-use-which/",
+          "description": "Comparison of vector databases vs graph RAG for agent memory"
+        }
+      ],
+      "key_insights": [
+        "Evolution: RAG → Agentic RAG → Agent Memory",
+        "Vector databases (pgvector, pinecone, weaviate, milvus) store high-dimensional embeddings",
+        "60% improvements in AI relevance, 40% reduction in onboarding overhead",
+        "Hybrid architectures combine vector search with graph traversal",
+        "Agents have short and long-term memory for complex task execution"
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Task Decomposition and Planning",
+      "description": "Multi-agent frameworks that break complex tasks into actionable sub-tasks with clear dependencies and execution order.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "coordination",
+      "github_references": [
+        {
+          "name": "TDAG",
+          "url": "https://github.com/yxwang8775/TDAG",
+          "description": "Multi-agent framework leveraging dynamic task decomposition and agent generation"
+        },
+        {
+          "name": "DeepResearchAgent",
+          "url": "https://github.com/SkyworkAI/DeepResearchAgent",
+          "description": "Hierarchical multi-agent system with top-level planning agent coordinating specialists"
+        }
+      ],
+      "key_insights": [
+        "TDAG uses dynamic task decomposition for complex problem-solving",
+        "DeepResearchAgent coordinates specialists for deep research and general tasks",
+        "LaMMA-P integrates LLM reasoning with PDDL planners for robot task allocation",
+        "GitHub's Plan Command breaks issues into sub-tasks via /plan",
+        "Key papers: TDAG (2024), TravelPlanner (2024), RAP (2024), Tree-Planner (2023)"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Agent Sandboxing and Code Execution",
+      "description": "Secure, isolated execution environments for AI agents running untrusted LLM-generated code with browser and shell access.",
+      "relevance_score": 10,
+      "state": "active",
+      "category": "execution",
+      "github_references": [
+        {
+          "name": "sandbox",
+          "url": "https://github.com/agent-infra/sandbox",
+          "description": "All-in-One Sandbox combining Browser, Shell, File, MCP and VSCode in Docker"
+        },
+        {
+          "name": "agent-sandbox",
+          "url": "https://github.com/kubernetes-sigs/agent-sandbox",
+          "description": "Easy management of isolated, stateful, singleton workloads for AI agents"
+        },
+        {
+          "name": "arrakis",
+          "url": "https://github.com/abshkbh/arrakis",
+          "description": "Self-hosted sandboxing with backtracking, REST API, and secure MicroVM isolation"
+        },
+        {
+          "name": "SWE-ReX",
+          "url": "https://github.com/SWE-agent/SWE-ReX",
+          "description": "Sandboxed code execution locally or on cloud, massively parallel"
+        }
+      ],
+      "key_insights": [
+        "VNC, VSCode, Jupyter, and Terminal in unified environment",
+        "Strong isolation with gVisor or Kata Containers for multi-tenant scenarios",
+        "MCP compatibility enables tool execution across frameworks",
+        "Over 1,000 MCP servers created since November 2024",
+        "Major adoption by OpenAI, Google DeepMind, and Replit"
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Error Recovery and Fault Tolerance",
+      "description": "Production patterns for multi-agent systems including retry, fallback chains, error classification, and checkpointing.",
+      "relevance_score": 10,
+      "state": "active",
+      "category": "execution",
+      "github_references": [
+        {
+          "name": "Referenced in article",
+          "url": "https://dev.to/klement_gunndu/4-fault-tolerance-patterns-every-ai-agent-needs-in-production-jih",
+          "description": "4 Fault Tolerance Patterns Every AI Agent Needs"
+        }
+      ],
+      "key_insights": [
+        "Four layers: retry with backoff, model fallback chains, error classification, checkpoint recovery",
+        "Redundancy and replication for critical tasks across multiple agents",
+        "Decentralization prevents single points of failure",
+        "Heartbeat signals and task completion checks for error detection",
+        "Checkpointing schemes: independent, coordinated, communication-induced (CIC)"
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Consensus and Voting Protocols",
+      "description": "Decision-making protocols in multi-agent debates including voting and consensus methods with performance trade-offs.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "governance",
+      "github_references": [
+        {
+          "name": "decision-protocols",
+          "url": "https://github.com/lkaesberg/decision-protocols",
+          "description": "Systematic evaluation of decision protocols in multi-agent debates"
+        }
+      ],
+      "key_insights": [
+        "Voting improves reasoning tasks by 13.2%, consensus improves knowledge tasks by 2.8%",
+        "Seven protocols: majority voting, supermajority, unanimity consensus, ranked voting, etc.",
+        "All-Agents Drafting (AAD) improves performance by up to 3.3%",
+        "Collective Improvement (CI) improves by up to 7.4%",
+        "Apache 2.0 licensed for open source development"
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Hierarchical Supervisor-Worker Patterns",
+      "description": "Multi-level agent architectures with manager agents overseeing specialist and worker agents for enterprise-scale orchestration.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "coordination",
+      "github_references": [
+        {
+          "name": "langgraph-supervisor-py",
+          "url": "https://github.com/langchain-ai/langgraph-supervisor-py",
+          "description": "Python library for hierarchical multi-agent systems with supervisor"
+        }
+      ],
+      "key_insights": [
+        "Three levels: Manager (strategic), Specialist (mid-level), Worker (execution)",
+        "Supervisors delegate work, aggregate results, and evaluate quality",
+        "Multi-layered architecture: 'supervisor of supervisors' for enterprise scale",
+        "Use when workflow requires 5+ tools or multiple specialized domains",
+        "Division-scoped data and tool access control with flexibility"
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Multi-Agent Benchmarks and Evaluation",
+      "description": "Comprehensive benchmarking frameworks measuring agent collaboration, competition, and task performance across diverse scenarios.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "evaluation",
+      "github_references": [
+        {
+          "name": "AgentBench",
+          "url": "https://github.com/THUDM/AgentBench",
+          "description": "Comprehensive benchmark to evaluate LLMs as agents (ICLR'24)"
+        },
+        {
+          "name": "MARBLE",
+          "url": "https://github.com/ulab-uiuc/MARBLE",
+          "description": "MultiAgentBench: Evaluating collaboration and competition of LLM agents (ACL 2025)"
+        }
+      ],
+      "key_insights": [
+        "AgentBench: 8 environments (OS, Database, Knowledge Graph, Card Game, etc.)",
+        "MultiAgentBench: Milestone-based KPIs for collaboration and competition quality",
+        "Metrics: Success Rate, F1-score, Pass@k, Progress Rate, Execution Accuracy",
+        "Multi-agent criteria: coordination efficiency, communication overhead, plan quality",
+        "REALM-Bench (11 real-world scenarios), CLEAR (cost, latency, efficiency, reliability)"
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Agent Communication Protocols",
+      "description": "Standardized message passing and coordination protocols enabling interoperability between agents and systems.",
+      "relevance_score": 8,
+      "state": "emerging",
+      "category": "coordination",
+      "github_references": [
+        {
+          "name": "agent-context-protocol",
+          "url": "https://github.com/agent-context-protocol/agent-context-protocol",
+          "description": "The first protocol for multi-agent communication and coordination"
+        },
+        {
+          "name": "agent-client-protocol",
+          "url": "https://github.com/agentclientprotocol/agent-client-protocol",
+          "description": "Protocol for connecting any editor to any agent"
+        }
+      ],
+      "key_insights": [
+        "Agent Context Protocols (ACP) enables interoperation with external APIs and agents",
+        "Structured message formats: ASSISTANCE_REQUEST, AGENT_REQUEST, AGENT_RESPONSE",
+        "Message-driven model promotes loose coupling and scalability",
+        "Creative solutions like Git as communication bus with markdown messages",
+        "Protocol choices: WebSockets, HTTP, peer-to-peer, vector embeddings"
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Blackboard Architecture and Shared State",
+      "description": "Multi-agent systems using shared memory where specialist agents collaboratively solve problems by reading and writing to a central blackboard.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "all-agentic-architectures",
+          "url": "https://github.com/FareedKhan-dev/all-agentic-architectures/blob/main/07_blackboard.ipynb",
+          "description": "Notebook demonstrating blackboard architecture implementation"
+        }
+      ],
+      "key_insights": [
+        "Three components: Shared Memory (blackboard), Specialist Agents, Control Unit",
+        "Control Unit (LLM) dynamically selects which agents act in each round",
+        "Public and private memory spaces for collaboration",
+        "Agents contribute opportunistically, reacting to changes",
+        "Trade-offs: centralized is simple but risks becoming bottleneck"
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Prompt Engineering for Role-Playing Agents",
+      "description": "Explicit design of role-specific prompts programming LLM agents to simulate autonomous behaviors in collaborative tasks.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "Referenced in guides",
+          "url": "https://www.promptingguide.ai/research/llm-agents",
+          "description": "LLM Agents section in Prompt Engineering Guide"
+        }
+      ],
+      "key_insights": [
+        "Role-specific prompts encode personas, objectives, and decision-making heuristics",
+        "Profiles include role details, personality, social information, demographics",
+        "Roles define function: Planner, Researcher, Executor",
+        "AutoGen, CrewAI, and LangGraph provide role-based frameworks",
+        "Challenge: cumulative prompt construction exhausts tokens quickly"
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Multi-Agent Security and Adversarial Attacks",
+      "description": "Research on jailbreak attacks, defenses, and safety benchmarks for LLM-based multi-agent systems.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "governance",
+      "github_references": [
+        {
+          "name": "AgentSafety",
+          "url": "https://github.com/OSU-NLP-Group/AgentSafety",
+          "description": "AgentHarm benchmark with 110 malicious agent tasks across 11 harm categories"
+        },
+        {
+          "name": "Awesome-Jailbreak-on-LLMs",
+          "url": "https://github.com/yueliu1999/Awesome-Jailbreak-on-LLMs",
+          "description": "Collection of jailbreak methods, papers, codes, datasets, and evaluations"
+        },
+        {
+          "name": "AISafetyLab",
+          "url": "https://github.com/thu-coai/AISafetyLab",
+          "description": "Comprehensive framework covering safety attack, defense, evaluation"
+        },
+        {
+          "name": "JailTrickBench",
+          "url": "https://github.com/usail-hkust/JailTrickBench",
+          "description": "Benchmarking of jailbreak attacks on LLMs (NeurIPS 2024)"
+        }
+      ],
+      "key_insights": [
+        "12 potential attack scenarios against different agent components",
+        "AutoDefense reduces attack success rate from 55.74% to 7.95% on GPT-3.5",
+        "Benchmarks: JailbreakBench, AgentDojo, AgentHarm",
+        "Attack strategies: input manipulation, adversarial demonstrations, backdoors",
+        "Comprehensive safety resources in Awesome LLM Security repositories"
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Agent Observability and Monitoring",
+      "description": "Telemetry, tracing, and logging systems for multi-agent workflows with OpenTelemetry standardization and specialized tools.",
+      "relevance_score": 10,
+      "state": "active",
+      "category": "execution",
+      "github_references": [
+        {
+          "name": "Referenced in standards",
+          "url": "https://opentelemetry.io/blog/2025/ai-agent-observability/",
+          "description": "AI Agent Observability evolving standards and best practices"
+        }
+      ],
+      "key_insights": [
+        "Industry converging on OpenTelemetry (OTEL) standard",
+        "Telemetry includes token usage, tool interactions, agent decision paths",
+        "2025 baseline: distributed tracing, token accounting, automated evals, human feedback",
+        "Tools: Langfuse (multi-modal tracing), Comet Opik (open-source platform)",
+        "Key gaps: prompt-completion linkage, multi-agent workflows, black-box reasoning"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Reflection and Self-Improvement",
+      "description": "Multi-agent systems with self-evaluation, critique, and iterative refinement through feedback loops to reduce confirmation bias.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "coordination",
+      "github_references": [
+        {
+          "name": "Referenced in research",
+          "url": "https://arxiv.org/pdf/2512.20845",
+          "description": "MAR: Multi-Agent Reflexion Improves Reasoning Abilities in LLMs"
+        }
+      ],
+      "key_insights": [
+        "Generate → critique → improve loop for self-review",
+        "Single-agent reflection suffers from confirmation bias and mode collapse",
+        "Multi-Agent Reflexion separates acting, evaluation, and critique across personas",
+        "GPT-4 baseline 78.6% improved to 97.1% with reflection (+18.5 points)",
+        "Cross-model validation: Claude 3 Opus (97.1%), Gemini 1.5 Pro (97.2%)"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Multi-Agent Code Generation",
+      "description": "Frameworks using specialized agents for code writing, testing, debugging in iterative feedback loops for software engineering.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "applications",
+      "github_references": [
+        {
+          "name": "AgentCoder",
+          "url": "https://github.com/huangd1999/AgentCoder",
+          "description": "Multi-agent code generation with programmer, test designer, and test executor"
+        },
+        {
+          "name": "MapCoder",
+          "url": "https://github.com/Md-Ashraful-Pramanik/MapCoder",
+          "description": "Multi-agent for competitive problem solving with retrieval, plan, code, debug agents"
+        },
+        {
+          "name": "HyperAgent",
+          "url": "https://github.com/FSoft-AI4Code/HyperAgent",
+          "description": "Generalist multi-agent system for software engineering tasks"
+        }
+      ],
+      "key_insights": [
+        "AgentCoder: iterative feedback loop between programmer, tester, and executor",
+        "MapCoder: adaptive agent traversal mimicking human programming cycle",
+        "HyperAgent: tackles wide spectrum of SE tasks across languages",
+        "Agency Agents: 112 specialized personas for Aider/Cursor/Claude Code",
+        "Reduces AI hallucinations through domain expert specialization"
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Automated Literature Review Systems",
+      "description": "Multi-agent frameworks automating systematic literature review through specialized agents for planning, retrieval, summarization, and synthesis.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "applications",
+      "github_references": [
+        {
+          "name": "Referenced in research",
+          "url": "https://arxiv.org/abs/2403.08399",
+          "description": "System for systematic literature review using multiple AI agents"
+        },
+        {
+          "name": "LiRA",
+          "url": "https://arxiv.org/abs/2510.05138",
+          "description": "Multi-agent framework for reliable and readable literature review generation"
+        }
+      ],
+      "key_insights": [
+        "LiRA: specialized agents for outlining, subsection writing, editing, reviewing",
+        "Components: Planner Agent (keywords), Retriever Agent (arXiv API), Summarizer Agent",
+        "Outperforms AutoSurvey and MASS-Survey in writing and citation quality",
+        "LLMs process and analyze large text volumes rapidly with context understanding",
+        "Challenges: synthesis quality, citation accuracy, scalability"
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Multi-Agent Game Playing and Competition",
+      "description": "Reinforcement learning and LLM-based agents competing in game environments with mixed cooperative-competitive dynamics.",
+      "relevance_score": 7,
+      "state": "active",
+      "category": "applications",
+      "github_references": [
+        {
+          "name": "unity_multiagent_rl",
+          "url": "https://github.com/legalaspro/unity_multiagent_rl",
+          "description": "Implements MAPPO, MASAC, MATD3, MADDPG for Unity Tennis and Soccer"
+        },
+        {
+          "name": "multiagent-competition",
+          "url": "https://github.com/openai/multiagent-competition",
+          "description": "Code for 'Emergent Complexity via Multi-agent Competition' paper"
+        },
+        {
+          "name": "Game-Agent-Coding-Benchmark",
+          "url": "https://github.com/summersonnn/Game-Agent-Coding-Benchmark",
+          "description": "GACL: LLMs generating code for game-playing agents (Battleship, Tic-Tac-Toe)"
+        },
+        {
+          "name": "llmwars",
+          "url": "https://github.com/andrewgph/llmwars",
+          "description": "Competitive games for LLM coding agents in Docker containers"
+        }
+      ],
+      "key_insights": [
+        "Four MARL algorithms for Unity environments with pre-trained models",
+        "OpenSpiel emphasizes general algorithms working across many games",
+        "GACL benchmarks LLMs generating game-playing code",
+        "LlmWars inspired by Core Wars with agents battling via Python code",
+        "Mixed cooperative-competitive environments test coordination and strategy"
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Human-in-the-Loop Collaboration",
+      "description": "Patterns for integrating human approval, validation, and decision-making into multi-agent workflows at critical checkpoints.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "governance",
+      "github_references": [
+        {
+          "name": "Referenced in docs",
+          "url": "https://docs.langchain.com/oss/python/langchain/human-in-the-loop",
+          "description": "LangChain human-in-the-loop documentation"
+        }
+      ],
+      "key_insights": [
+        "LangGraph interrupt() pauses mid-execution for human input",
+        "CrewAI human_input and HumanTool for agent guidance",
+        "HumanLayer SDK with Slack/Email/Discord integration",
+        "Approval flows: pause until human approves, modifies, or rejects",
+        "Use cases: regulatory compliance, high-stakes operations, error catching"
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Knowledge Graphs for Agent Memory",
+      "description": "Graph-native memory systems using Neo4j and temporal knowledge graphs for multi-agent context and learning.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "agent-memory",
+          "url": "https://github.com/neo4j-labs/agent-memory",
+          "description": "Graph-native memory system storing conversations and building knowledge graphs"
+        },
+        {
+          "name": "llm-graph-builder",
+          "url": "https://github.com/neo4j-labs/llm-graph-builder",
+          "description": "Neo4j graph construction from unstructured data using LLMs"
+        },
+        {
+          "name": "graphiti",
+          "url": "https://github.com/getzep/graphiti",
+          "description": "Build real-time knowledge graphs for AI agents"
+        }
+      ],
+      "key_insights": [
+        "Graph-native memory lets agents learn from their own reasoning",
+        "Graphiti: flexible, real-time memory layer with temporal awareness",
+        "Multi-agent systems specialize in extracting entities and relationships",
+        "Integrations: LangChain, Pydantic AI, LlamaIndex, CrewAI, OpenAI Agents",
+        "Supports Neo4j, Amazon Neptune, FalkorDB, Kuzu databases"
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Multi-Agent Debate and Discussion",
+      "description": "Frameworks where agents engage in multi-turn debates, refining responses through discussion to improve reasoning and factuality.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "coordination",
+      "github_references": [
+        {
+          "name": "llm_multiagent_debate",
+          "url": "https://github.com/composable-models/llm_multiagent_debate",
+          "description": "ICML 2024: Improving factuality and reasoning through multiagent debate"
+        },
+        {
+          "name": "Multi-Agents-Debate",
+          "url": "https://github.com/Skytliang/Multi-Agents-Debate",
+          "description": "MAD: First work exploring multi-agent debate with LLMs"
+        },
+        {
+          "name": "DebateLLM",
+          "url": "https://github.com/instadeepai/DebateLLM",
+          "description": "Benchmarking multi-agent debate for truthfulness in Q&A"
+        },
+        {
+          "name": "ECON",
+          "url": "https://github.com/tmlr-group/ECON",
+          "description": "ICML 2025: Belief-driven multi-agent reasoning via Bayesian Nash Equilibrium"
+        }
+      ],
+      "key_insights": [
+        "Multi-turn interaction where agents exchange and refine responses",
+        "MAD framework explores debating capability of LLMs",
+        "ECON uses Bayesian Nash Equilibrium for efficient coordination",
+        "Addresses communication costs, convergence, and scalability",
+        "AutoGen provides multi-agent debate design pattern"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "DAG-Based Workflow Orchestration",
+      "description": "Directed acyclic graphs modeling task dependencies with parallel execution within waves and sequential wave progression.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "coordination",
+      "github_references": [
+        {
+          "name": "Referenced in architecture",
+          "url": "https://microsoft.github.io/multi-agent-reference-architecture/",
+          "description": "Microsoft multi-agent reference architecture"
+        }
+      ],
+      "key_insights": [
+        "Nodes represent tasks, edges represent directional dependencies",
+        "Acyclic nature prevents infinite loops (built-in error handling)",
+        "Parallel execution within waves, sequential across waves",
+        "AutoGen and LangGraph explicitly use DAG orchestration",
+        "GitHub's AgenticTrading demonstrates practical DAG implementation"
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Cost Optimization and Budget Management",
+      "description": "Strategies for managing token usage, model selection, caching, and multi-agent communication to control LLM costs.",
+      "relevance_score": 10,
+      "state": "active",
+      "category": "execution",
+      "github_references": [
+        {
+          "name": "Referenced in guides",
+          "url": "https://code.claude.com/docs/en/costs",
+          "description": "Claude Code cost management documentation"
+        }
+      ],
+      "key_insights": [
+        "Visibility: tag token usage with agent ID, task type, thread, business context",
+        "Model routing: use smaller models for simple tasks, reserve premium for complex reasoning",
+        "Biggest cost trap: chatty agents over-communicating unnecessary information",
+        "Budget controls: monthly quota limits and execution rate limiting",
+        "Poor context management accounts for 60-70% of total spend",
+        "Cached tokens are 75% cheaper to process"
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Real-Time Streaming and Event-Driven Agents",
+      "description": "Multi-agent systems using SSE, WebSockets, and streaming protocols for real-time bidirectional communication.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "execution",
+      "github_references": [
+        {
+          "name": "realtime-agent-over-websockets",
+          "url": "https://github.com/ag2ai/realtime-agent-over-websockets",
+          "description": "AG2 RealtimeAgent communication over WebSocketAudioAdapter"
+        }
+      ],
+      "key_insights": [
+        "Google ADK enables real-time events streaming via SSE",
+        "Per-user isolation, concurrent multi-user support, stream resilience",
+        "WebSockets gaining adoption for bidirectionality in agent workflows",
+        "AG-UI Protocol streams structured events over HTTP/SSE",
+        "AG2 integrates WebSockets for persistent chat with streaming events"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Swarms Enterprise Multi-Agent Framework",
+      "description": "Production-ready framework for enterprise-grade multi-agent orchestration with focus on reliability and scale.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "swarms",
+          "url": "https://github.com/kyegomez/swarms",
+          "description": "Enterprise-Grade Production-Ready Multi-Agent Orchestration Framework"
+        }
+      ],
+      "key_insights": [
+        "Focus on production reliability and enterprise scale",
+        "Alternative to educational OpenAI Swarm with production features",
+        "Community-driven with focus on real-world deployment challenges"
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Multi-Agent Reinforcement Learning Platforms",
+      "description": "MARL frameworks and environments for cooperative and competitive agent training with algorithms like MAPPO, MADDPG.",
+      "relevance_score": 7,
+      "state": "active",
+      "category": "applications",
+      "github_references": [
+        {
+          "name": "MARL-Papers",
+          "url": "https://github.com/LantaoYu/MARL-Papers",
+          "description": "Paper list of multi-agent reinforcement learning"
+        },
+        {
+          "name": "multiagent-particle-envs",
+          "url": "https://github.com/openai/multiagent-particle-envs",
+          "description": "Multi-agent particle environment for cooperative-competitive scenarios"
+        },
+        {
+          "name": "MARL-papers-with-code",
+          "url": "https://github.com/TimeBreaker/MARL-papers-with-code",
+          "description": "Multi-Agent Reinforcement Learning papers with code implementations"
+        }
+      ],
+      "key_insights": [
+        "Algorithms: MAPPO, MASAC, MATD3, MADDPG for different scenarios",
+        "OpenAI particle environments: continuous observation, discrete action",
+        "Mixed cooperative-competitive environments test complex interactions",
+        "Growing repository of papers with implementations",
+        "Applications in robotics, game playing, resource allocation"
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Agent Development Kits and SDKs",
+      "description": "Comprehensive toolkits and SDKs providing building blocks for multi-agent system development with streaming and multimodal support.",
+      "relevance_score": 8,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "Referenced in docs",
+          "url": "https://google.github.io/adk-docs/",
+          "description": "Google Agent Development Kit documentation"
+        }
+      ],
+      "key_insights": [
+        "Google ADK enables multimodal agent development",
+        "Built-in streaming support with SSE",
+        "Multiple output handlers (console, file, WebSocket)",
+        "Per-user isolation and concurrent user support",
+        "Integration with modern web frameworks"
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Multi-Agent System Design Patterns",
+      "description": "Reusable architectural patterns including supervisor, debate, reflection, and sequential/parallel coordination.",
+      "relevance_score": 9,
+      "state": "active",
+      "category": "architecture",
+      "github_references": [
+        {
+          "name": "designing-multiagent-systems",
+          "url": "https://github.com/victordibia/designing-multiagent-systems",
+          "description": "Building LLM-Enabled Multi Agent Applications from Scratch"
+        },
+        {
+          "name": "all-agentic-architectures",
+          "url": "https://github.com/FareedKhan-dev/all-agentic-architectures",
+          "description": "Collection of agentic architecture patterns with notebooks"
+        }
+      ],
+      "key_insights": [
+        "Common patterns: supervisor, hierarchical, debate, reflection, sequential, parallel",
+        "Each pattern addresses specific coordination challenges",
+        "Pattern selection based on task complexity and requirements",
+        "Implementations across multiple frameworks (AutoGen, LangGraph, CrewAI)",
+        "Documentation with practical examples and notebooks"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Awesome Lists and Research Collections",
+      "description": "Curated collections of multi-agent papers, projects, tools, and resources for staying current with the field.",
+      "relevance_score": 7,
+      "state": "mature",
+      "category": "evaluation",
+      "github_references": [
+        {
+          "name": "Awesome-LLM-based-MultiAgents",
+          "url": "https://github.com/Andrewzh112/Awesome-LLM-based-MultiAgents",
+          "description": "Curated list of LLM-based multi-agent resources"
+        },
+        {
+          "name": "LLM-Agents-Papers",
+          "url": "https://github.com/AGI-Edgerunners/LLM-Agents-Papers",
+          "description": "Papers related to LLM based agents"
+        },
+        {
+          "name": "Autonomous-Agents",
+          "url": "https://github.com/tmgthb/Autonomous-Agents",
+          "description": "Autonomous Agents (LLMs) research papers, updated daily"
+        },
+        {
+          "name": "awesome-multi-agent-systems",
+          "url": "https://github.com/richardblythman/awesome-multi-agent-systems",
+          "description": "Curated list of multi-agent systems resources, libraries, frameworks"
+        },
+        {
+          "name": "500-AI-Agents-Projects",
+          "url": "https://github.com/ashishpatel26/500-AI-Agents-Projects",
+          "description": "500 AI agent use cases across industries with implementation links"
+        }
+      ],
+      "key_insights": [
+        "Regularly updated collections tracking latest research",
+        "Coverage across academic papers, GitHub projects, tools",
+        "Domain-specific collections (LLM agents, autonomous agents, MARL)",
+        "Practical use cases across healthcare, finance, education, retail",
+        "Essential for staying current in rapidly evolving field"
+      ]
+    }
+  ],
+  "summary": {
+    "state_distribution": {
+      "emerging": 2,
+      "active": 30,
+      "mature": 3
+    },
+    "category_distribution": {
+      "architecture": 12,
+      "coordination": 8,
+      "execution": 6,
+      "governance": 3,
+      "evaluation": 3,
+      "applications": 3
+    },
+    "average_relevance_score": 8.5,
+    "high_priority_topics": [
+      "LangGraph Stateful Workflows (10)",
+      "Agent Sandboxing and Code Execution (10)",
+      "Error Recovery and Fault Tolerance (10)",
+      "Agent Observability and Monitoring (10)",
+      "Cost Optimization and Budget Management (10)"
+    ],
+    "key_trends": [
+      "Convergence on OpenTelemetry for agent observability",
+      "Shift from monolithic agents to coordinated multi-agent networks in 2025",
+      "Growing adoption of DAG-based orchestration for complex workflows",
+      "Emphasis on production reliability with fault tolerance and error recovery",
+      "Integration of knowledge graphs and RAG for agent memory",
+      "Rising importance of cost optimization and budget management",
+      "Security focus with adversarial testing and jailbreak defenses",
+      "Human-in-the-loop patterns for governance and approval workflows"
+    ]
+  }
+}

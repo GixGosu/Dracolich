@@ -1,0 +1,967 @@
+{
+  "metadata": {
+    "created": "2026-03-11",
+    "researcher": "ACADEMIC_RESEARCHER",
+    "source_types": ["arXiv", "NeurIPS", "ICML", "ICLR", "ACL", "EMNLP", "AAMAS"],
+    "time_range": "2024-2026",
+    "total_topics": 48
+  },
+  "topics": [
+    {
+      "id": 1,
+      "name": "Agentic AI Architectures and Taxonomies",
+      "description": "Unified frameworks for agent systems centered on transformer-based foundation models with explicit component interfaces.",
+      "category": "Architecture",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Agentic Artificial Intelligence (AI): Architectures, Taxonomies, and Evaluation",
+          "authors": "Multiple authors",
+          "url": "https://arxiv.org/pdf/2601.12560",
+          "year": 2026
+        },
+        {
+          "title": "AI Agent Systems: Architectures, Applications, and Evaluation",
+          "url": "https://arxiv.org/html/2601.01743v1",
+          "year": 2026
+        },
+        {
+          "title": "Distinguishing Autonomous AI Agents from Collaborative Agentic Systems",
+          "url": "https://arxiv.org/html/2506.01438v1",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Agent Communication Protocols",
+      "description": "Standardized protocols (MCP, ACP, A2A, ANP) for enabling dynamic discovery, secure communication, and decentralized agent collaboration.",
+      "category": "Architecture",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "A Survey of Agent Interoperability Protocols",
+          "url": "https://arxiv.org/html/2505.02279v1",
+          "year": 2025
+        },
+        {
+          "title": "Beyond Self-Talk: A Communication-Centric Survey of LLM-Based Multi-Agent Systems",
+          "url": "https://arxiv.org/html/2502.14321v2",
+          "year": 2025
+        },
+        {
+          "title": "Which LLM Multi-Agent Protocol to Choose?",
+          "url": "https://arxiv.org/pdf/2510.17149",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Agent Memory Systems and Long-Term Recall",
+      "description": "Memory architectures that enable agents to retain, consolidate, and selectively recall past experiences from external databases.",
+      "category": "Architecture",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Memory in the Age of AI Agents",
+          "url": "https://arxiv.org/abs/2512.13564",
+          "year": 2025
+        },
+        {
+          "title": "A-MEM: Agentic Memory for LLM Agents",
+          "url": "https://arxiv.org/abs/2502.12110",
+          "year": 2025
+        },
+        {
+          "title": "Hindsight is 20/20: Building Agent Memory that Retains, Recalls, and Reflects",
+          "url": "https://arxiv.org/html/2512.12818v1",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Hierarchical Task Decomposition",
+      "description": "Planning frameworks where agents decompose complex tasks into manageable sub-tasks through hierarchical orchestration.",
+      "category": "Coordination",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "AgentOrchestra: A Hierarchical Multi-Agent Framework",
+          "url": "https://arxiv.org/html/2506.12508v1",
+          "year": 2025
+        },
+        {
+          "title": "COLA: Collaborative Multi-Agent Framework with Dynamic Task Allocation",
+          "url": "https://aclanthology.org/2025.emnlp-main.227.pdf",
+          "year": 2025
+        },
+        {
+          "title": "MagicAgent: Towards Generalized Agent Planning",
+          "url": "https://arxiv.org/html/2602.19000v2",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Multi-Agent Coordination Mechanisms",
+      "description": "Underlying coordination mechanisms enabling collaboration including coordinated learning, communication, task allocation, and consensus achievement.",
+      "category": "Coordination",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Multi-Agent Coordination across Diverse Applications: A Survey",
+          "url": "https://arxiv.org/html/2502.14743v2",
+          "year": 2025
+        },
+        {
+          "title": "Multi-Agent Collaboration Mechanisms: A Survey of LLMs",
+          "url": "https://arxiv.org/html/2501.06322v1",
+          "year": 2025
+        },
+        {
+          "title": "Advancing Multi-Agent Systems Through Model Context Protocol",
+          "url": "https://arxiv.org/html/2504.21030v1",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Agent Delegation and Team Structures",
+      "description": "Collaboration patterns for multi-agent workflows including hierarchical delegation, peer-to-peer negotiation, blackboard coordination, and market-based allocation.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Agent-to-Agent Collaboration Models for Complex Business Workflows",
+          "url": "https://theamericanjournals.com/index.php/tajet/article/download/7396/6746/10780",
+          "year": 2026
+        },
+        {
+          "title": "AI Agent Delegation and Team Coordination Patterns",
+          "url": "https://zylos.ai/research/2026-03-08-ai-agent-delegation-team-coordination-patterns",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Multi-Agent Conflict Resolution and Negotiation",
+      "description": "Frameworks for agents with conflicting interests to negotiate, resolve disputes, and reach mutually beneficial agreements.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "LLM-Deliberation: Evaluating LLMs with Interactive Multi-Agent Negotiation",
+          "url": "https://proceedings.neurips.cc/paper_files/paper/2024/file/984dd3db213db2d1454a163b65b84d08-Paper-Datasets_and_Benchmarks_Track.pdf",
+          "venue": "NeurIPS 2024",
+          "year": 2024
+        },
+        {
+          "title": "Explicit Cooperation Shapes Human-Like Multi-agent LLM Negotiation",
+          "url": "https://workshop-proceedings.icwsm.org/pdf/2025_34.pdf",
+          "year": 2025
+        },
+        {
+          "title": "Evaluating the Collaboration and Competition of LLM agents",
+          "url": "https://aclanthology.org/2025.acl-long.421.pdf",
+          "venue": "ACL 2025",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Tool Use and Function Calling in Multi-Agent Systems",
+      "description": "Tool-integrated planning enabling LLM agents to tackle complex tasks through iterative reasoning combined with external tool use.",
+      "category": "Architecture",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Multi-Agent Tool-Integrated Policy Optimization",
+          "url": "https://arxiv.org/html/2510.04678v1",
+          "year": 2024
+        },
+        {
+          "title": "Facilitating Multi-Turn Function Calling",
+          "url": "https://proceedings.iclr.cc/paper_files/paper/2025/file/69c49f75ca31620f1f0d38093d9f3d9b-Paper-Conference.pdf",
+          "venue": "ICLR 2025",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Multi-Agent Benchmarks and Evaluation",
+      "description": "Comprehensive benchmarks evaluating LLM-based multi-agent systems across diverse, interactive scenarios with novel metrics.",
+      "category": "Evaluation",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "MultiAgentBench: Evaluating the Collaboration and Competition of LLM agents",
+          "url": "https://arxiv.org/abs/2503.01935",
+          "venue": "ACL 2025",
+          "year": 2025
+        },
+        {
+          "title": "MedAgentBoard: Benchmarking Multi-Agent Collaboration",
+          "url": "https://arxiv.org/abs/2505.12371",
+          "year": 2025
+        },
+        {
+          "title": "AgentArch: A Comprehensive Benchmark to Evaluate Agent Architectures",
+          "url": "https://arxiv.org/html/2509.10769v1",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "Agent Evaluation Metrics and Methods",
+      "description": "Systematic evaluation metrics including Success Rate, Task Goal Completion, Pass Rate, and reliability measures for agent systems.",
+      "category": "Evaluation",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Evaluation and Benchmarking of LLM Agents: A Survey",
+          "url": "https://arxiv.org/html/2507.21504v1",
+          "year": 2025
+        },
+        {
+          "title": "ReliabilityBench: Evaluating LLM Agent Reliability",
+          "url": "https://arxiv.org/pdf/2601.06112",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Multi-Agent AI Safety and Risk Assessment",
+      "description": "Structured taxonomy of multi-agent risks including miscoordination, conflict, collusion, and seven key risk factors.",
+      "category": "Governance",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Multi-Agent Risks from Advanced AI",
+          "url": "https://arxiv.org/abs/2502.14143",
+          "year": 2025
+        },
+        {
+          "title": "The 2025 AI Agent Index",
+          "url": "https://arxiv.org/html/2602.17753v1",
+          "year": 2026
+        },
+        {
+          "title": "A Survey of Agentic AI and Cybersecurity",
+          "url": "https://arxiv.org/html/2601.05293v1",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 12,
+      "name": "Governance-as-a-Service for Agent Systems",
+      "description": "Modular, policy-driven enforcement layers that regulate agent outputs at runtime using declarative rules and trust mechanisms.",
+      "category": "Governance",
+      "relevance_score": 8,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Governance-as-a-Service: A Multi-Agent Framework for AI System Compliance",
+          "url": "https://arxiv.org/abs/2508.18765",
+          "year": 2025
+        },
+        {
+          "title": "Legal Alignment for Safe and Ethical AI",
+          "url": "https://aigi.ox.ac.uk/wp-content/uploads/2026/01/Kolt-Caputo-et-al.-2026-Legal-Alignment-for-Safe-and-Ethical-AI.pdf",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 13,
+      "name": "Self-Reflection and Self-Correction in Agents",
+      "description": "Mechanisms enabling agents to significantly improve problem-solving performance through iterative self-reflection and critique.",
+      "category": "Architecture",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Self-Reflection in LLM Agents: Effects on Problem-Solving Performance",
+          "url": "https://arxiv.org/abs/2405.06682",
+          "year": 2024
+        },
+        {
+          "title": "MAR: Multi-Agent Reflexion Improves Reasoning Abilities",
+          "url": "https://arxiv.org/html/2512.20845",
+          "year": 2025
+        },
+        {
+          "title": "Reflection-Reinforced Self-Training for Language Agents",
+          "url": "https://aclanthology.org/2024.emnlp-main.861.pdf",
+          "venue": "EMNLP 2024",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": 14,
+      "name": "Emergent Coordination and Collective Behavior",
+      "description": "Understanding how multi-agent LLM systems can be steered from aggregates to higher-order collectives with emergent properties.",
+      "category": "Coordination",
+      "relevance_score": 9,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Emergent Coordination in Multi-Agent Language Models",
+          "url": "https://arxiv.org/abs/2510.05174",
+          "year": 2024
+        },
+        {
+          "title": "MAEBE: Multi-Agent Emergent Behavior Framework",
+          "url": "https://arxiv.org/pdf/2506.03053",
+          "year": 2025
+        },
+        {
+          "title": "Multi-Agent LLM Systems: From Emergent Collaboration to Structured Collective Intelligence",
+          "url": "https://www.preprints.org/manuscript/202511.1370",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 15,
+      "name": "Agentic Browsers and Web Grounding",
+      "description": "AI-powered browsers that autonomously execute multi-step web tasks through vision-based interaction and action execution.",
+      "category": "Architecture",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "The Agentic Browser Landscape in 2026",
+          "url": "https://www.nohackspod.com/blog/agentic-browser-landscape-2026",
+          "year": 2026
+        },
+        {
+          "title": "2025-2026 AI Computer-Use Benchmarks & Top AI Agents Guide",
+          "url": "https://o-mega.ai/articles/the-2025-2026-guide-to-ai-computer-use-benchmarks-and-top-ai-agents",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 16,
+      "name": "Multi-Agent Reward Shaping and Curriculum Learning",
+      "description": "Techniques combining reward shaping and adaptive curricula to improve multi-agent reinforcement learning in complex environments.",
+      "category": "Coordination",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "ReSCOM: Reward-Shaped Curriculum for Efficient Multi-Agent RL",
+          "url": "https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p2153.pdf",
+          "venue": "AAMAS 2025",
+          "year": 2025
+        },
+        {
+          "title": "Multi-Agent Collaborative Reward Design for Enhancing Reasoning",
+          "url": "https://arxiv.org/abs/2511.16202",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 17,
+      "name": "Agent Persona and Role Specialization",
+      "description": "Specialized AI systems designed to simulate assigned personas including demographic, character, and individualized personas.",
+      "category": "Architecture",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "From Persona to Personalization: A Survey on Role-Playing Language Agents",
+          "url": "https://arxiv.org/abs/2404.18231",
+          "year": 2024
+        },
+        {
+          "title": "Two Tales of Persona in LLMs",
+          "url": "https://aclanthology.org/2024.findings-emnlp.969/",
+          "venue": "EMNLP 2024",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": 18,
+      "name": "Multi-Agent Debate and Adversarial Discussion",
+      "description": "Frameworks where multiple LLM agents propose answers and critique each other's reasoning to reach consensus or better solutions.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Breaking Mental Set through Diverse Multi-Agent Debate",
+          "url": "https://github.com/MraDonkey/DMAD",
+          "venue": "ICLR 2025",
+          "year": 2025
+        },
+        {
+          "title": "FREE-MAD: Consensus-Free Multi-Agent Debate",
+          "url": "https://arxiv.org/pdf/2509.11035",
+          "year": 2025
+        },
+        {
+          "title": "Adaptive Heterogeneous Multi-Agent Debate",
+          "url": "https://link.springer.com/article/10.1007/s44443-025-00353-3",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 19,
+      "name": "Agent Error Recovery and Failure Handling",
+      "description": "Comprehensive frameworks for agents to iteratively recover from failures through targeting feedback and structured exception handling.",
+      "category": "Architecture",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Where LLM Agents Fail and How They can Learn From Failures",
+          "url": "https://arxiv.org/abs/2509.25370",
+          "year": 2025
+        },
+        {
+          "title": "SHIELDA: Structured Handling of Exceptions in LLM-Driven Agentic Workflows",
+          "url": "https://arxiv.org/pdf/2508.07935",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 20,
+      "name": "Agent Scalability and Distributed Systems",
+      "description": "Architectures and patterns for scaling agent systems from single agents to orchestrated teams of specialized agents.",
+      "category": "Architecture",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Towards a science of scaling agent systems",
+          "url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
+          "year": 2025
+        },
+        {
+          "title": "Hierarchical Frameworks for Scaling-up Multi-agent Coordination",
+          "url": "https://www.ifaamas.org/Proceedings/aamas2025/pdfs/p2932.pdf",
+          "venue": "AAMAS 2025",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Human-in-the-Loop Agent Supervision",
+      "description": "Approaches embedding human decision gates at key stages to steer automated multi-agent pipelines while maintaining automation benefits.",
+      "category": "Governance",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Human-In-The-Loop Software Development Agents",
+          "url": "https://arxiv.org/abs/2506.11009",
+          "year": 2025
+        },
+        {
+          "title": "HLER: Human-in-the-Loop Economic Research via Multi-Agent Pipelines",
+          "url": "https://arxiv.org/html/2603.07444",
+          "year": 2026
+        },
+        {
+          "title": "Magentic-UI: Towards Human-in-the-loop Agentic Systems",
+          "url": "https://www.microsoft.com/en-us/research/wp-content/uploads/2025/07/magentic-ui-report.pdf",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Multi-Agent Knowledge Sharing and Information Fusion",
+      "description": "Systems enabling agents to share knowledge dynamically, creating compound learning effects across agent networks.",
+      "category": "Architecture",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "Memory in LLM-based Multi-agent Systems: Mechanisms, Challenges, and Collective Intelligence",
+          "url": "https://www.techrxiv.org/users/1007269/articles/1367390",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 23,
+      "name": "Agent Protocol Standardization (MCP, A2A)",
+      "description": "Lightweight standardized protocols enabling agent interoperability across heterogeneous systems and providers.",
+      "category": "Architecture",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "A Survey of Agent Interoperability Protocols",
+          "url": "https://arxiv.org/html/2505.02279v1",
+          "year": 2025
+        },
+        {
+          "title": "Announcing the Agent2Agent Protocol (A2A)",
+          "url": "https://developers.googleblog.com/en/a2a-a-new-era-of-agent-interoperability/",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 24,
+      "name": "Self-Evolving and Lifelong Learning Agents",
+      "description": "Agents that continuously improve through experience, bridging foundation models with lifelong agentic systems.",
+      "category": "Architecture",
+      "relevance_score": 8,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "A Comprehensive Survey of Self-Evolving AI Agents",
+          "url": "https://github.com/EvoAgentX/Awesome-Self-Evolving-Agents",
+          "year": 2025
+        },
+        {
+          "title": "MemVerse: Multimodal Memory for Lifelong Learning Agents",
+          "note": "Referenced in Memory in the Age of AI Agents survey",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 25,
+      "name": "Multi-Agent Policy Optimization with RL",
+      "description": "Multi-agent, multi-turn RL algorithms building on MARL techniques and LLM approaches for improved collaboration.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Improved Multi-Agent Collaboration with Multi-Turn Reinforcement Learning",
+          "url": "https://neurips.cc/virtual/2025/128017",
+          "venue": "NeurIPS 2025",
+          "year": 2025
+        },
+        {
+          "title": "Multi-Agent Tool-Integrated Policy Optimization",
+          "url": "https://arxiv.org/html/2510.04678v1",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": 26,
+      "name": "Agent Communication via Cache-to-Cache (C2C)",
+      "description": "Direct semantic communication between LLMs using internal KV-cache, bypassing text generation for lower latency.",
+      "category": "Architecture",
+      "relevance_score": 7,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Cache-to-Cache Communication referenced in communication protocols survey",
+          "note": "Mentioned in Beyond Self-Talk survey",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 27,
+      "name": "Agent Coordination Topologies",
+      "description": "Various coordination patterns including star, chain, tree, and graph topologies for multi-agent systems.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "MultiAgentBench - evaluates coordination protocols",
+          "url": "https://arxiv.org/abs/2503.01935",
+          "year": 2025
+        },
+        {
+          "title": "AgentsNet: Coordination and Collaborative Reasoning",
+          "url": "https://arxiv.org/html/2507.08616v1",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 28,
+      "name": "Multi-Agent Systems in Software Engineering",
+      "description": "LLM-driven multi-agent systems for software development including code generation, testing, and issue resolution.",
+      "category": "Application",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Human-In-The-Loop Software Development Agents",
+          "url": "https://arxiv.org/abs/2506.11009",
+          "venue": "MSR 2025",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 29,
+      "name": "Multi-Agent Medical and Healthcare Systems",
+      "description": "Multi-agent collaboration for medical tasks including question answering, EHR modeling, and clinical workflow automation.",
+      "category": "Application",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "MedAgentBoard: Benchmarking Multi-Agent Collaboration",
+          "url": "https://arxiv.org/abs/2505.12371",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 30,
+      "name": "Agent Security and Indirect Prompt Injection",
+      "description": "Security vulnerabilities in agentic systems where external content contains hidden malicious instructions.",
+      "category": "Governance",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Red-Teaming LLM Multi-Agent Systems",
+          "url": "https://aclanthology.org/2025.findings-acl.349.pdf",
+          "venue": "ACL 2025",
+          "year": 2025
+        },
+        {
+          "title": "Agentic Browser Security: 2025 Year-End Review",
+          "url": "https://www.wiz.io/blog/agentic-browser-security-2025-year-end-review",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Multi-Agent Communication Overhead and Efficiency",
+      "description": "Evaluating agent communication protocols across task utility, communication overhead, and system performance metrics.",
+      "category": "Evaluation",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Which LLM Multi-Agent Protocol to Choose? - introduces ProtocolBench",
+          "url": "https://arxiv.org/pdf/2510.17149",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": 32,
+      "name": "Agent Planning with Cognitive Strategies",
+      "description": "Advanced planning techniques including group discussion, cognitive planning, and milestone-based approaches.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "HiPlan: Hierarchical Planning combining global milestone guides",
+          "note": "Referenced in planning papers",
+          "year": 2025
+        },
+        {
+          "title": "MultiAgentBench - evaluates cognitive planning strategies",
+          "url": "https://arxiv.org/abs/2503.01935",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 33,
+      "name": "Consensus and Coalition Formation",
+      "description": "Mechanisms for achieving consensus, forming coalitions, and organizing teams/clusters in multi-agent systems.",
+      "category": "Coordination",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "Multi-Agent Coordination across Diverse Applications",
+          "url": "https://arxiv.org/html/2502.14743v2",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 34,
+      "name": "Agent Trust and Reliability Scoring",
+      "description": "Trust factor mechanisms that score agents based on compliance and severity-weighted violations.",
+      "category": "Governance",
+      "relevance_score": 7,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Governance-as-a-Service with Trust Factor mechanism",
+          "url": "https://arxiv.org/abs/2508.18765",
+          "year": 2025
+        },
+        {
+          "title": "ReliabilityBench: Evaluating LLM Agent Reliability",
+          "url": "https://arxiv.org/pdf/2601.06112",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Multi-Agent Memory Operating Systems",
+      "description": "Self-organizing memory systems for structured long-horizon reasoning in agent architectures.",
+      "category": "Architecture",
+      "relevance_score": 8,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "EverMemOS: A Self-Organizing Memory Operating System",
+          "note": "Referenced in Memory in the Age of AI Agents survey",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 36,
+      "name": "Agent Grounding and Tool Execution Environments",
+      "description": "Coupling foundation models with execution loops that observe environments, plan, call tools, and verify outcomes.",
+      "category": "Architecture",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "AI Agent Systems: Architectures, Applications, and Evaluation",
+          "url": "https://arxiv.org/html/2601.01743v1",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 37,
+      "name": "Multi-Agent Reasoning and Chain-of-Thought",
+      "description": "Techniques for improving multi-agent reasoning including conformity modes and Chain-of-Thought approaches.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "FREE-MAD: Consensus-Free Multi-Agent Debate with CoT",
+          "url": "https://arxiv.org/pdf/2509.11035",
+          "year": 2025
+        },
+        {
+          "title": "MAR: Multi-Agent Reflexion Improves Reasoning",
+          "url": "https://arxiv.org/html/2512.20845",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 38,
+      "name": "Agent Network Effects and Selection Pressures",
+      "description": "Understanding how network effects and selection pressures contribute to multi-agent risks and behaviors.",
+      "category": "Governance",
+      "relevance_score": 7,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Multi-Agent Risks from Advanced AI - identifies seven risk factors",
+          "url": "https://arxiv.org/abs/2502.14143",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 39,
+      "name": "Multi-Agent Fake News Detection",
+      "description": "Using multi-agent debate systems to unmask misinformation and improve factual reasoning.",
+      "category": "Application",
+      "relevance_score": 6,
+      "state": "active",
+      "references": [
+        {
+          "title": "The Truth Becomes Clearer Through Debate! Multi-Agent Systems Unmask Fake News",
+          "url": "https://dl.acm.org/doi/10.1145/3726302.3730092",
+          "venue": "SIGIR 2025",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 40,
+      "name": "Agent Meta-Reasoning and Task Decomposition",
+      "description": "Meta-agents that decompose queries following principles of solvability, completeness, and non-redundancy.",
+      "category": "Coordination",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Agent-Oriented Planning in Multi-Agent Systems",
+          "url": "https://openreview.net/forum?id=EqcLAU6gyU",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Adaptive Knowledge Selection in Multi-Agent Systems",
+      "description": "Shared knowledge pools and adaptive selection methods enabling agents to reduce knowledge discrepancies during collaboration.",
+      "category": "Coordination",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "Learning to break: Knowledge-enhanced reasoning in multi-agent debate",
+          "url": "https://www.sciencedirect.com/science/article/abs/pii/S0925231224018344",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "id": 42,
+      "name": "Agent Transparency and Developer Disclosure",
+      "description": "Documenting agent capabilities, safety features, evaluations, and societal impacts with varying transparency levels.",
+      "category": "Governance",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "The 2025 AI Agent Index - documents 30 state-of-the-art agents",
+          "url": "https://arxiv.org/html/2602.17753v1",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 43,
+      "name": "Multi-Agent Systems for Economic Research",
+      "description": "Automated multi-agent pipelines for empirical discovery with dataset-aware hypothesis generation.",
+      "category": "Application",
+      "relevance_score": 6,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "HLER: Human-in-the-Loop Economic Research via Multi-Agent Pipelines",
+          "url": "https://arxiv.org/html/2603.07444",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 44,
+      "name": "Adversarial Robustness of Multimodal Agents",
+      "description": "Evaluating and improving the robustness of multimodal LLM agents against adversarial attacks.",
+      "category": "Governance",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "Dissecting Adversarial Robustness of Multimodal LM Agents",
+          "url": "https://openreview.net/forum?id=YauQYh2k1g",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 45,
+      "name": "Agent Memory Consolidation and Retrieval",
+      "description": "How agents consolidate experiences into long-term memory and dynamically retrieve relevant past experiences.",
+      "category": "Architecture",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Memory in the Age of AI Agents",
+          "url": "https://arxiv.org/abs/2512.13564",
+          "year": 2025
+        },
+        {
+          "title": "Evaluating Memory Structure in LLM Agents",
+          "url": "https://arxiv.org/pdf/2602.11243",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 46,
+      "name": "Multi-Agent Pursuit-Evasion Games",
+      "description": "Emergent behaviors in bounded environments where agents use MARL to develop adaptive pursuit and evasion strategies.",
+      "category": "Application",
+      "relevance_score": 6,
+      "state": "active",
+      "references": [
+        {
+          "title": "Emergent behaviors in multiagent pursuit evasion games",
+          "url": "https://www.nature.com/articles/s41598-025-15057-x",
+          "venue": "Scientific Reports",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "id": 47,
+      "name": "Multi-Agent Workshop Initiatives and Research Programs",
+      "description": "Coordinated research efforts including ICLR, NeurIPS, and AAAI workshops on multi-agent collaboration and safety.",
+      "category": "Evaluation",
+      "relevance_score": 7,
+      "state": "active",
+      "references": [
+        {
+          "title": "ICLR 2026 Workshop on Agents in the Wild",
+          "url": "https://openreview.net/pdf?id=etVUhp2igM",
+          "year": 2026
+        },
+        {
+          "title": "Multi-Agent Systems in the Era of Foundation Models Workshop",
+          "url": "https://icml.cc/virtual/2025/workshop/39955",
+          "venue": "ICML 2025",
+          "year": 2025
+        },
+        {
+          "title": "WMAC 2026: AAAI Bridge Program on Advancing LLM-Based Multi-Agent Collaboration",
+          "url": "https://multiagents.org/workshop/",
+          "year": 2026
+        }
+      ]
+    },
+    {
+      "id": 48,
+      "name": "Zettelkasten Method for Agent Memory",
+      "description": "Novel memory organization following Zettelkasten to create interconnected knowledge networks for agents.",
+      "category": "Architecture",
+      "relevance_score": 7,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "A-MEM: Agentic Memory dynamically organizing memories via Zettelkasten",
+          "url": "https://arxiv.org/abs/2502.12110",
+          "year": 2025
+        }
+      ]
+    }
+  ]
+}

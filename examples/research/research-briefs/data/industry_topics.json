@@ -1,0 +1,1204 @@
+{
+  "metadata": {
+    "generated_by": "INDUSTRY_RESEARCHER",
+    "date": "2026-03-11",
+    "total_topics": 48,
+    "categories": [
+      "Execution",
+      "Applications",
+      "Governance",
+      "Architecture",
+      "Coordination",
+      "Evaluation"
+    ]
+  },
+  "topics": [
+    {
+      "id": 1,
+      "name": "Anthropic Multi-Agent Research System",
+      "category": "Applications",
+      "description": "Anthropic's production system using multiple Claude agents to explore complex topics, with specialized subagents coordinated by a lead planning agent.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "How we built our multi-agent research system",
+          "url": "https://www.anthropic.com/engineering/multi-agent-research-system",
+          "type": "blog_post"
+        },
+        {
+          "title": "Claude Meets the Research Team: Inside Anthropic's Multi-Agent Masterpiece",
+          "url": "https://engineering.01cloud.com/2025/06/30/claude-meets-the-research-team-inside-anthropics-multi-agent-masterpiece/",
+          "type": "case_study"
+        }
+      ],
+      "key_insight": "Multi-agent system with Claude Opus 4 as lead and Sonnet 4 subagents outperformed single-agent Opus 4 by 90.2% on internal research evaluations."
+    },
+    {
+      "id": 2,
+      "name": "Anthropic Multi-Agent Code Review",
+      "category": "Applications",
+      "description": "Multi-agent system for Claude Code that dispatches AI teams to analyze pull requests, launched March 2026.",
+      "relevance_score": 9,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Anthropic launches a multi-agent code review tool for Claude Code",
+          "url": "https://thenewstack.io/anthropic-launches-a-multi-agent-code-review-tool-for-claude-code/",
+          "type": "announcement"
+        },
+        {
+          "title": "Anthropic Launches Multi-Agent Code Review for Claude Code",
+          "url": "https://www.vktr.com/ai-news/anthropic-launches-multi-agent-code-review-for-claude-code/",
+          "type": "news"
+        }
+      ],
+      "key_insight": "Substantive review comments on PRs increased from 16% to 54% after internal deployment at Anthropic."
+    },
+    {
+      "id": 3,
+      "name": "OpenAI Agents SDK",
+      "category": "Architecture",
+      "description": "Production-ready evolution of OpenAI's Swarm framework, launched March 2025 with agents-as-tools, handoffs, and guardrails.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "OpenAI Agents SDK",
+          "url": "https://openai.github.io/openai-agents-python/",
+          "type": "documentation"
+        },
+        {
+          "title": "OpenAI Agents SDK Review (December 2025)",
+          "url": "https://mem0.ai/blog/openai-agents-sdk-review",
+          "type": "review"
+        },
+        {
+          "title": "New tools for building agents",
+          "url": "https://openai.com/index/new-tools-for-building-agents/",
+          "type": "announcement"
+        }
+      ],
+      "key_insight": "Supports both Python and TypeScript/JavaScript with equal feature parity, setting it apart from Python-only alternatives."
+    },
+    {
+      "id": 4,
+      "name": "Google/DeepMind Scaling Agent Systems Research",
+      "category": "Coordination",
+      "description": "Research deriving quantitative scaling principles for AI agent systems, revealing when multi-agent coordination helps vs. hurts performance.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Towards a science of scaling agent systems",
+          "url": "https://research.google/blog/towards-a-science-of-scaling-agent-systems-when-and-why-agent-systems-work/",
+          "type": "research"
+        },
+        {
+          "title": "Struggling to get AI agents to work? This Google research could help",
+          "url": "https://fortune.com/2025/12/16/google-researchers-ai-agents-multi-agent-getting-them-to-work/",
+          "type": "article"
+        }
+      ],
+      "key_insight": "On parallelizable tasks, centralized coordination improved performance by 80.9%, but on sequential tasks, multi-agent systems degraded performance by 39-70%."
+    },
+    {
+      "id": 5,
+      "name": "Google DeepMind Intelligent Delegation Framework",
+      "category": "Governance",
+      "description": "Framework for intelligent AI delegation addressing task allocation, authority transfer, and verification in agentic systems, released February 2026.",
+      "relevance_score": 9,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Google DeepMind proposes 'Intelligent Delegation' for enterprise AI agents",
+          "url": "https://techinformed.com/google-deepmind-proposes-intelligent-delegation-for-enterprise-ai-agents/",
+          "type": "announcement"
+        },
+        {
+          "title": "Google DeepMind Proposes Framework for Intelligent AI Agent Delegation",
+          "url": "https://creati.ai/ai-news/2026-02-17/google-deepmind-ai-agent-delegation-framework/",
+          "type": "news"
+        }
+      ],
+      "key_insight": "Redefines delegation as a sequence of decisions involving task allocation with transfer of authority, not just work distribution."
+    },
+    {
+      "id": 6,
+      "name": "Meta Manus Acquisition",
+      "category": "Applications",
+      "description": "Meta's $2 billion acquisition of autonomous agent platform Manus in January 2026 to anchor execution layer for AI agents.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Meta buys Manus for $2 billion to power high-stakes AI agent race",
+          "url": "https://www.techradar.com/pro/meta-buys-manus-for-usd2-billion-to-power-high-stakes-ai-agent-race",
+          "type": "news"
+        },
+        {
+          "title": "Meta Anchors the 'Execution Layer' with $2 Billion Acquisition",
+          "url": "https://www.financialcontent.com/article/tokenring-2026-1-28-meta-anchors-the-execution-layer-with-2-billion-acquisition-of-autonomous-agent-powerhouse-manus",
+          "type": "announcement"
+        }
+      ],
+      "key_insight": "Integration expected to turn WhatsApp, Instagram, and Facebook into comprehensive personal and professional assistance hubs."
+    },
+    {
+      "id": 7,
+      "name": "LangGraph Production Deployments",
+      "category": "Architecture",
+      "description": "LangChain's graph-based multi-agent orchestration framework powering production systems at Exa, Bertelsmann, LinkedIn, Uber, and Elastic.",
+      "relevance_score": 9,
+      "state": "mature",
+      "references": [
+        {
+          "title": "How Exa built a Web Research Multi-Agent System with LangGraph",
+          "url": "https://blog.langchain.com/exa/",
+          "type": "case_study"
+        },
+        {
+          "title": "How Bertelsmann Built a Multi-Agent System to Empower Creatives",
+          "url": "https://www.blog.langchain.com/customer-bertelsmann/",
+          "type": "case_study"
+        },
+        {
+          "title": "Top 5 LangGraph Agents in Production 2024",
+          "url": "https://blog.langchain.com/top-5-langgraph-agents-in-production-2024/",
+          "type": "compilation"
+        }
+      ],
+      "key_insight": "Exa's system processes hundreds of research queries daily in 15 seconds to 3 minutes with planner, task executor, and observer agent pattern."
+    },
+    {
+      "id": 8,
+      "name": "Microsoft Agent Framework Merger",
+      "category": "Architecture",
+      "description": "Unification of AutoGen and Semantic Kernel into production-ready framework, public preview October 2025, GA Q1 2026.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Semantic Kernel + AutoGen = Open-Source 'Microsoft Agent Framework'",
+          "url": "https://visualstudiomagazine.com/articles/2025/10/01/semantic-kernel-autogen--open-source-microsoft-agent-framework.aspx",
+          "type": "announcement"
+        },
+        {
+          "title": "Introducing Microsoft Agent Framework",
+          "url": "https://devblogs.microsoft.com/foundry/introducing-microsoft-agent-framework-the-open-source-engine-for-agentic-ai-apps/",
+          "type": "blog_post"
+        }
+      ],
+      "key_insight": "Combines AutoGen's dynamic multi-agent orchestration with Semantic Kernel's production foundations and type safety."
+    },
+    {
+      "id": 9,
+      "name": "CrewAI Enterprise Production Platform",
+      "category": "Architecture",
+      "description": "Multi-agent framework powering 1.4B agentic automations across enterprises including PwC, IBM, Capgemini, and NVIDIA.",
+      "relevance_score": 9,
+      "state": "mature",
+      "references": [
+        {
+          "title": "CrewAI - The Leading Multi-Agent Platform",
+          "url": "https://crewai.com/",
+          "type": "platform"
+        },
+        {
+          "title": "How CrewAI is orchestrating the next generation of AI Agents",
+          "url": "https://www.insightpartners.com/ideas/crewai-scaleup-ai-story/",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Attracted 150 enterprise customers within six months of launch, with production-grade monitoring and deployment features."
+    },
+    {
+      "id": 10,
+      "name": "AI Agent Error Handling and Fault Tolerance",
+      "category": "Execution",
+      "description": "Production patterns for autonomous recovery, exponential backoff, circuit breakers, and self-healing workflows in agent systems.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Best Practices for AI Agent Implementations: Enterprise Guide 2026",
+          "url": "https://onereach.ai/blog/best-practices-for-ai-agent-implementations/",
+          "type": "guide"
+        },
+        {
+          "title": "5 Reasons Why AI Agents and RAG Pipelines Fail in Production",
+          "url": "https://www.salesforce.com/blog/ai-agent-rag/",
+          "type": "blog_post"
+        },
+        {
+          "title": "Mastering Retry Logic Agents: A Deep Dive into 2025 Best Practices",
+          "url": "https://sparkco.ai/blog/mastering-retry-logic-agents-a-deep-dive-into-2025-best-practices",
+          "type": "guide"
+        }
+      ],
+      "key_insight": "Salesforce Agentforce 3.0 features self-healing workflows that automatically recover from API timeouts and data entry errors."
+    },
+    {
+      "id": 11,
+      "name": "AI Agent Rate Limiting and Concurrency Control",
+      "category": "Execution",
+      "description": "Multi-dimensional rate limiting strategies for bursty agent traffic, token-based quotas, and centralized resource management.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "AI Agent Rate Limiting Strategies & Best Practices",
+          "url": "https://fast.io/resources/ai-agent-rate-limiting/",
+          "type": "guide"
+        },
+        {
+          "title": "How AI Agents Are Changing API Rate Limit Approaches",
+          "url": "https://nordicapis.com/how-ai-agents-are-changing-api-rate-limit-approaches/",
+          "type": "article"
+        },
+        {
+          "title": "Rate Limiting & Throttling for AI Agents",
+          "url": "https://neuraltrust.ai/blog/rate-limiting-throttling-ai-agents",
+          "type": "blog_post"
+        }
+      ],
+      "key_insight": "A single agent task can trigger dozens of sequential API calls, making traditional fixed-window limits ineffective; modern platforms apply multi-dimensional limits."
+    },
+    {
+      "id": 12,
+      "name": "AI Agent Safety and Human-in-the-Loop Governance",
+      "category": "Governance",
+      "description": "Evolution from human oversight of every decision to layered governance with AI-monitoring-AI and strategic human checkpoints.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Human-in-the-loop has hit the wall. It's time for AI to oversee AI",
+          "url": "https://siliconangle.com/2026/01/18/human-loop-hit-wall-time-ai-oversee-ai/",
+          "type": "article"
+        },
+        {
+          "title": "Agentic AI Governance Frameworks 2026: Risks, Oversight, and Emerging Standards",
+          "url": "https://hackernoon.com/agentic-ai-governance-frameworks-2026-risks-oversight-and-emerging-standards",
+          "type": "article"
+        },
+        {
+          "title": "2026 International AI Safety Report",
+          "url": "https://internationalaisafetyreport.org/publication/2026-report-extended-summary-policymakers",
+          "type": "report"
+        }
+      ],
+      "key_insight": "Agentic systems making millions of decisions per second require layered governance where AI systems monitor AI, but don't monitor themselves."
+    },
+    {
+      "id": 13,
+      "name": "Parallel Agent Execution Patterns",
+      "category": "Execution",
+      "description": "Architectural patterns for concurrent agent execution with meta-agent orchestration, fan-out/fan-in, and result merging strategies.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Orchestrating Parallel AI Agents",
+          "url": "https://cobusgreyling.medium.com/orchestrating-parallel-ai-agents-dab96e5f2e61",
+          "type": "article"
+        },
+        {
+          "title": "Parallel agents - Agent Development Kit (ADK)",
+          "url": "https://google.github.io/adk-docs/agents/workflow-agents/parallel-agents/",
+          "type": "documentation"
+        },
+        {
+          "title": "Boost AI agent performance with Parallel Execution",
+          "url": "https://www.kore.ai/blog/boost-ai-agent-performance-with-parallel-execution",
+          "type": "blog_post"
+        }
+      ],
+      "key_insight": "Real-world benchmarks show 36% improvement (6:10 → 3:56) with parallel execution for independent tasks using centralized meta-agent orchestration."
+    },
+    {
+      "id": 14,
+      "name": "AI Agent Benchmarks and Evaluation Metrics",
+      "category": "Evaluation",
+      "description": "Standardized benchmarks including GAIA, CUB, AgentBench, WebArena, and ColBench for evaluating agent performance.",
+      "relevance_score": 10,
+      "state": "mature",
+      "references": [
+        {
+          "title": "10 AI agent benchmarks",
+          "url": "https://www.evidentlyai.com/blog/ai-agent-benchmarks",
+          "type": "guide"
+        },
+        {
+          "title": "Best AI Agent Evaluation Benchmarks: 2025 Complete Guide",
+          "url": "https://o-mega.ai/articles/the-best-ai-agent-evals-and-benchmarks-full-2025-guide",
+          "type": "guide"
+        },
+        {
+          "title": "8 benchmarks shaping the next generation of AI agents",
+          "url": "https://tessl.io/blog/8-benchmarks-shaping-the-next-generation-of-ai-agents/",
+          "type": "article"
+        }
+      ],
+      "key_insight": "GAIA Level 3 tasks show top score of 61% (Writer's Action Agent), demonstrating significant gap to human-level performance."
+    },
+    {
+      "id": 15,
+      "name": "AI Agent Memory Systems and Context Management",
+      "category": "Architecture",
+      "description": "Emerging frameworks for factual, experiential, and working memory with in-context and out-of-context storage patterns.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Memory for AI Agents: A New Paradigm of Context Engineering",
+          "url": "https://thenewstack.io/memory-for-ai-agents-a-new-paradigm-of-context-engineering/",
+          "type": "article"
+        },
+        {
+          "title": "Amazon Bedrock AgentCore Memory: Building context-aware agents",
+          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-agentcore-memory-building-context-aware-agents/",
+          "type": "blog_post"
+        },
+        {
+          "title": "Memory in the Age of AI Agents: A Survey",
+          "url": "https://arxiv.org/abs/2512.13564",
+          "type": "research"
+        }
+      ],
+      "key_insight": "Amazon introduced Bedrock AgentCore Memory at AWS Summit NYC 2025, eliminating complex memory infrastructure for context-aware agents."
+    },
+    {
+      "id": 16,
+      "name": "AI Agent Tool Use and Function Calling",
+      "category": "Architecture",
+      "description": "Evolution of function calling with dynamic tool discovery, MCP/Unified APIs, and first-class platform support across OpenAI, Gemini, Anthropic.",
+      "relevance_score": 10,
+      "state": "mature",
+      "references": [
+        {
+          "title": "Tool Calling Explained: The Core of AI Agents (2026 Guide)",
+          "url": "https://composio.dev/content/ai-agent-tool-calling-guide",
+          "type": "guide"
+        },
+        {
+          "title": "APIs for AI Agents: The 5 Integration Patterns (2026 Guide)",
+          "url": "https://composio.dev/content/apis-ai-agents-integration-patterns",
+          "type": "guide"
+        },
+        {
+          "title": "Function Calling and Tool Use: Enabling Practical AI Agent Systems",
+          "url": "https://mbrenndoerfer.com/writing/function-calling-tool-use-practical-ai-agents",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Tool calling is the core technical capability distinguishing AI agents from chatbots; modern systems use dynamic discovery with tool registry queries."
+    },
+    {
+      "id": 17,
+      "name": "Hierarchical Agent Task Decomposition",
+      "category": "Coordination",
+      "description": "Planning agent patterns for breaking complex tasks into DAG-structured sub-tasks with specialized agent assignment.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "AgentOrchestra: A Hierarchical Multi-Agent Framework",
+          "url": "https://arxiv.org/html/2506.12508v1",
+          "type": "research"
+        },
+        {
+          "title": "Long-Running AI Agents and Task Decomposition 2026",
+          "url": "https://zylos.ai/research/2026-01-16-long-running-ai-agents",
+          "type": "research"
+        },
+        {
+          "title": "Deep Dive into Agent Task Decomposition Techniques",
+          "url": "https://sparkco.ai/blog/deep-dive-into-agent-task-decomposition-techniques",
+          "type": "guide"
+        }
+      ],
+      "key_insight": "Hierarchical delegation consistently outperforms flat coordination on complex tasks, but introduces bottleneck risks requiring careful mitigation."
+    },
+    {
+      "id": 18,
+      "name": "AI Agent Observability Platforms",
+      "category": "Execution",
+      "description": "Specialized platforms for tracing, debugging, and monitoring multi-step agent reasoning chains including LangSmith, Langfuse, Braintrust, Maxim.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "AI Agent Observability - Evolving Standards and Best Practices",
+          "url": "https://opentelemetry.io/blog/2025/ai-agent-observability/",
+          "type": "blog_post"
+        },
+        {
+          "title": "Top 5 AI Agent Observability Platforms 2026 Guide",
+          "url": "https://o-mega.ai/articles/top-5-ai-agent-observability-platforms-the-ultimate-2026-guide",
+          "type": "guide"
+        },
+        {
+          "title": "15 AI Agent Observability Tools in 2026",
+          "url": "https://aimultiple.com/agentic-monitoring",
+          "type": "compilation"
+        }
+      ],
+      "key_insight": "Gartner predicts 40% of agentic AI projects will be canceled by end of 2027 due to reliability concerns, making observability critical."
+    },
+    {
+      "id": 19,
+      "name": "AI Agent Customer Support Automation",
+      "category": "Applications",
+      "description": "Production deployments achieving 80% automation rates, 50% cost reduction, and 25% NPS boosts with agentic customer service systems.",
+      "relevance_score": 9,
+      "state": "mature",
+      "references": [
+        {
+          "title": "7 best AI agents for customer support (compared for 2026)",
+          "url": "https://www.replicant.com/blog/best-ai-agents-for-customer-support",
+          "type": "comparison"
+        },
+        {
+          "title": "Gartner Predicts Agentic AI Will Autonomously Resolve 80% of Customer Service Issues by 2029",
+          "url": "https://www.gartner.com/en/newsroom/press-releases/2025-03-05-gartner-predicts-agentic-ai-will-autonomously-resolve-80-percent-of-common-customer-service-issues-without-human-intervention-by-20290",
+          "type": "press_release"
+        }
+      ],
+      "key_insight": "Over 54% of organizations already use generative AI in customer service; Envoy Global saved 70-80% of support team time with Ema."
+    },
+    {
+      "id": 20,
+      "name": "AI Agent Prompt Engineering and System Prompts",
+      "category": "Architecture",
+      "description": "Evolution from single prompts to prompt scaffolding, defensive prompting, and structured five-layer system prompt design.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "The Ultimate Guide to Prompt Engineering in 2026",
+          "url": "https://www.lakera.ai/blog/prompt-engineering-guide",
+          "type": "guide"
+        },
+        {
+          "title": "The 2026 Guide to Prompt Engineering",
+          "url": "https://www.ibm.com/think/prompt-engineering",
+          "type": "guide"
+        }
+      ],
+      "key_insight": "Industry shifting from prompt engineering to orchestration as primary focus; system prompts now have five layers: Persona, Scope, Tools, Constraints, Topic References."
+    },
+    {
+      "id": 21,
+      "name": "OWASP AI Agent Security Top 10",
+      "category": "Governance",
+      "description": "Security framework identifying top threats including prompt injection (LLM01), tool misuse, and system prompt leakage for agentic systems.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "OWASP Top 10 for Agentic Applications for 2026",
+          "url": "https://genai.owasp.org/resource/owasp-top-10-for-agentic-applications-for-2026/",
+          "type": "framework"
+        },
+        {
+          "title": "LLM01:2025 Prompt Injection",
+          "url": "https://genai.owasp.org/llmrisk/llm01-prompt-injection/",
+          "type": "documentation"
+        },
+        {
+          "title": "OWASP's AI Agent Security Top 10 Security Risks 2026",
+          "url": "https://medium.com/@oracle_43885/owasps-ai-agent-security-top-10-agent-security-risks-2026-fc5c435e86eb",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Prompt injection appears in 73% of production AI deployments; OWASP framework developed through collaboration with 100+ industry experts."
+    },
+    {
+      "id": 22,
+      "name": "AI Agent Cost Optimization and Token Management",
+      "category": "Execution",
+      "description": "Strategies for caching, model cascading, prompt optimization, and RAG to reduce costs by 40-75% in production agent systems.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "How to Budget for AI Agents: Practical Steps to Manage Operational Costs",
+          "url": "https://blog.tonic3.com/guide-to-smart-ai-agent-budget-token-consumption",
+          "type": "guide"
+        },
+        {
+          "title": "Cost Optimization Strategies for Enterprise AI Agents",
+          "url": "https://datagrid.com/blog/8-strategies-cut-ai-agent-costs",
+          "type": "blog_post"
+        },
+        {
+          "title": "The Real Cost of AI Agent Token Waste: How I Saved $2000/Month",
+          "url": "https://dev.to/anonimousdev_/the-real-cost-of-ai-agent-token-waste-how-i-saved-2000month-53c",
+          "type": "case_study"
+        }
+      ],
+      "key_insight": "Enterprises report 42% cost reductions with caching; model cascading (simple → GPT-5 Nano, complex → premium) cuts token costs by 60%."
+    },
+    {
+      "id": 23,
+      "name": "Agentic RAG and GraphRAG",
+      "category": "Architecture",
+      "description": "Evolution from traditional RAG to agentic RAG with autonomous retrieval strategies and graph-based knowledge representations.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Agentic Retrieval-Augmented Generation: A Survey",
+          "url": "https://arxiv.org/abs/2501.09136",
+          "type": "research"
+        },
+        {
+          "title": "The Ultimate RAG Blueprint: Everything you need to know about RAG in 2025/2026",
+          "url": "https://langwatch.ai/blog/the-ultimate-rag-blueprint-everything-you-need-to-know-about-rag-in-2025-2026",
+          "type": "guide"
+        },
+        {
+          "title": "GraphRAG & Knowledge Graphs: Making Your Data AI-Ready for 2026",
+          "url": "https://flur.ee/fluree-blog/graphrag-knowledge-graphs-making-your-data-ai-ready-for-2026/",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Agentic RAG embeds autonomous agents into retrieval pipeline for reflection, planning, tool use; GraphRAG shows 5x query speed improvement over traditional RAG."
+    },
+    {
+      "id": 24,
+      "name": "AI Agents for Scientific Research Automation",
+      "category": "Applications",
+      "description": "AI agents autonomously formulating hypotheses, running experiments, and writing peer-reviewed papers in life sciences, chemistry, materials science.",
+      "relevance_score": 9,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "The 2025 AI Agent Index",
+          "url": "https://arxiv.org/html/2602.17753",
+          "type": "research"
+        },
+        {
+          "title": "Latest AI Research (Dec 2025): GPT-5, Agents & Trends",
+          "url": "https://intuitionlabs.ai/articles/latest-ai-research-trends-2025",
+          "type": "article"
+        }
+      ],
+      "key_insight": "OpenAI's GPT-5 achieved 79× efficiency gain in gene-editing protocol optimization; DeepMind's AlphaEvolve discovered algorithm beating 1969 record."
+    },
+    {
+      "id": 25,
+      "name": "AI Agents for Data Analysis and Analytics",
+      "category": "Applications",
+      "description": "Agentic AI for autonomous analytical workflows with AutoML, data mesh architecture, and end-to-end pipeline automation.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "What AI Data Analysis Trends Will Dominate 2026?",
+          "url": "https://www.findanomaly.ai/ai-data-analysis-trends-2026",
+          "type": "article"
+        },
+        {
+          "title": "The Future of AI Data Analysis in 2026: Agentic Analytics & Trends",
+          "url": "https://www.aitechboss.com/future-of-ai-data-analysis-2026/",
+          "type": "article"
+        },
+        {
+          "title": "The 28 Best AI Agents for Data Analysis to Consider in 2026",
+          "url": "https://solutionsreview.com/business-intelligence/the-best-ai-agents-for-data-analysis/",
+          "type": "compilation"
+        }
+      ],
+      "key_insight": "Global predictive analytics market growing from $17.49B (2025) to $100.20B (2034) at 21.40% CAGR; 66% of organizations report measurable productivity gains."
+    },
+    {
+      "id": 26,
+      "name": "Workflow Orchestration and Pipeline Automation",
+      "category": "Execution",
+      "description": "Multi-agent orchestration patterns including hierarchical, sequential pipeline, and decentralized swarm workflows for enterprise automation.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "The 2026 Guide to Agentic Workflow Architectures",
+          "url": "https://www.stackai.com/blog/the-2026-guide-to-agentic-workflow-architectures",
+          "type": "guide"
+        },
+        {
+          "title": "Unlocking exponential value with AI agent orchestration",
+          "url": "https://www.deloitte.com/us/en/insights/industry/technology/technology-media-and-telecom-predictions/2026/ai-agent-orchestration.html",
+          "type": "report"
+        },
+        {
+          "title": "21 agent orchestration tools for managing your AI fleet",
+          "url": "https://www.cio.com/article/4138739/21-agent-orchestration-tools-for-managing-your-ai-fleet.html",
+          "type": "compilation"
+        }
+      ],
+      "key_insight": "Organizations implementing enterprise automation report 30-50% process time reductions; logistics teams cut delays by 40% with coordinated agent systems."
+    },
+    {
+      "id": 27,
+      "name": "State Management and Session Persistence",
+      "category": "Architecture",
+      "description": "Frameworks for managing conversation context, checkpointing, and cross-session persistence including LangGraph StateGraph and AWS Session Management APIs.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Why State Management is the #1 Challenge for Agentic AI",
+          "url": "https://intellyx.com/2025/02/24/why-state-management-is-the-1-challenge-for-agentic-ai/",
+          "type": "article"
+        },
+        {
+          "title": "Amazon Bedrock launches Session Management APIs",
+          "url": "https://aws.amazon.com/blogs/machine-learning/amazon-bedrock-launches-session-management-apis-for-generative-ai-applications-preview/",
+          "type": "announcement"
+        },
+        {
+          "title": "Microsoft Foundry Agent Service Simplifies State Management",
+          "url": "https://www.infoq.com/news/2025/12/foundry-agent-memory-preview/",
+          "type": "news"
+        }
+      ],
+      "key_insight": "Strands Agents 1.0 added SessionManager for automatic persistence to S3, enabling seamless conversation resumption after compute restarts."
+    },
+    {
+      "id": 28,
+      "name": "Knowledge Graphs and Graph Databases for Agents",
+      "category": "Architecture",
+      "description": "Graph-based knowledge representation with Neo4j, GraphRAG, and semantic relationship modeling for AI-ready knowledge fabric.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "GraphRAG & Knowledge Graphs: Making Your Data AI-Ready for 2026",
+          "url": "https://flur.ee/fluree-blog/graphrag-knowledge-graphs-making-your-data-ai-ready-for-2026/",
+          "type": "article"
+        },
+        {
+          "title": "2025: Year of AI and Scalability - Graph Database & Analytics",
+          "url": "https://neo4j.com/blog/news/2025-ai-scalability/",
+          "type": "blog_post"
+        },
+        {
+          "title": "From LLMs to Knowledge Graphs: Building Production-Ready Graph Systems in 2025",
+          "url": "https://medium.com/@claudiubranzan/from-llms-to-knowledge-graphs-building-production-ready-graph-systems-in-2025-2b4aff1ec99a",
+          "type": "article"
+        }
+      ],
+      "key_insight": "78% of businesses feel unprepared for generative AI due to poor data foundations; GraphRAG shows 5x query speed improvement and 300-320% ROI."
+    },
+    {
+      "id": 29,
+      "name": "Agent-to-Agent Communication (A2A Protocol)",
+      "category": "Coordination",
+      "description": "Open protocol for inter-agent communication with Agent Cards, task-oriented messaging, launched by Google and Linux Foundation in 2025.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "A2A: The Agent2Agent Protocol",
+          "url": "https://www.deeplearning.ai/short-courses/a2a-the-agent2agent-protocol/",
+          "type": "course"
+        },
+        {
+          "title": "Linux Foundation Launches the Agent2Agent Protocol Project",
+          "url": "https://www.linuxfoundation.org/press/linux-foundation-launches-the-agent2agent-protocol-project-to-enable-secure-intelligent-communication-between-ai-agents",
+          "type": "press_release"
+        },
+        {
+          "title": "What Is Agent2Agent (A2A) Protocol?",
+          "url": "https://www.ibm.com/think/topics/agent2agent-protocol",
+          "type": "documentation"
+        }
+      ],
+      "key_insight": "Supported by 50+ technology partners including Atlassian, Salesforce, ServiceNow, and leading service providers; enables cross-ecosystem agent collaboration."
+    },
+    {
+      "id": 30,
+      "name": "AI-Powered Code Review Automation",
+      "category": "Applications",
+      "description": "Multi-agent code review systems achieving 17% high-severity issue detection, with tools like CodeRabbit, Graphite Agent, and Anthropic Code Review.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "1 in 7 PRs now involve AI agents | State of AI Code Review 2025",
+          "url": "https://pullflow.com/state-of-ai-code-review-2025",
+          "type": "report"
+        },
+        {
+          "title": "Enhancing Code Quality at Scale with AI-Powered Code Reviews",
+          "url": "https://devblogs.microsoft.com/engineering-at-microsoft/enhancing-code-quality-at-scale-with-ai-powered-code-reviews/",
+          "type": "blog_post"
+        },
+        {
+          "title": "The 6 Best AI Code Review Tools for Pull Requests in 2025",
+          "url": "https://dev.to/heraldofsolace/the-6-best-ai-code-review-tools-for-pull-requests-in-2025-4n43",
+          "type": "comparison"
+        }
+      ],
+      "key_insight": "GitHub Octoverse reports 29% YoY increase in merged PRs; 25-35% growth in code per engineer creates review bottleneck; AI agents show 10-20% median PR completion time improvement."
+    },
+    {
+      "id": 31,
+      "name": "Sandbox Isolation and Security Containment",
+      "category": "Governance",
+      "description": "Production isolation strategies using microVMs (Firecracker), gVisor, and Kubernetes Agent Sandbox for secure code execution.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "How to sandbox AI agents in 2026: MicroVMs, gVisor & isolation strategies",
+          "url": "https://northflank.com/blog/how-to-sandbox-ai-agents",
+          "type": "guide"
+        },
+        {
+          "title": "Agentic AI on Kubernetes and GKE",
+          "url": "https://cloud.google.com/blog/products/containers-kubernetes/agentic-ai-on-kubernetes-and-gke",
+          "type": "blog_post"
+        },
+        {
+          "title": "Open-Source Agent Sandbox Enables Secure Deployment on Kubernetes",
+          "url": "https://www.infoq.com/news/2025/12/agent-sandbox-kubernetes/",
+          "type": "news"
+        }
+      ],
+      "key_insight": "Google introduced Agent Sandbox at KubeCon NA 2025; gVisor provides syscall interception for untrusted code; Firecracker recommended for production agents."
+    },
+    {
+      "id": 32,
+      "name": "Consensus Mechanisms and Multi-Agent Voting",
+      "category": "Coordination",
+      "description": "Decision protocols including majority voting, unanimity consensus, and Byzantine Fault-Tolerant mechanisms for multi-agent collaboration.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Voting or Consensus? Decision-Making in Multi-Agent Debate",
+          "url": "https://arxiv.org/abs/2502.19130",
+          "type": "research"
+        },
+        {
+          "title": "Multi-Agent Coordination Gone Wrong? Fix With 10 Strategies",
+          "url": "https://galileo.ai/blog/multi-agent-coordination-strategies",
+          "type": "guide"
+        }
+      ],
+      "key_insight": "Voting protocols improve reasoning tasks by 13.2%, consensus improves knowledge tasks by 2.8%; Byzantine Fault-Tolerant consensus tolerates up to 33% faulty agents."
+    },
+    {
+      "id": 33,
+      "name": "Agent Handoff and Delegation Patterns",
+      "category": "Coordination",
+      "description": "Patterns for dynamic task transfer between specialized agents including handoff orchestration, event-driven handoffs, and hierarchical delegation.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "AI Agent Delegation and Team Coordination Patterns",
+          "url": "https://zylos.ai/research/2026-03-08-ai-agent-delegation-team-coordination-patterns",
+          "type": "research"
+        },
+        {
+          "title": "Handoffs - OpenAI Agents SDK",
+          "url": "https://openai.github.io/openai-agents-python/handoffs/",
+          "type": "documentation"
+        },
+        {
+          "title": "Agentic Delegation: LangGraph vs OpenAI vs Google ADK",
+          "url": "https://www.arcade.dev/blog/agent-handoffs-langgraph-openai-google/",
+          "type": "comparison"
+        }
+      ],
+      "key_insight": "Hierarchical delegation outperforms flat coordination on complex tasks; MIT research shows upfront workflow planning outperforms reactive delegation for structured workflows."
+    },
+    {
+      "id": 34,
+      "name": "Model Context Protocol (MCP)",
+      "category": "Architecture",
+      "description": "Open standard for AI-data integration introduced by Anthropic, adopted by OpenAI, Google, Microsoft, with 97M monthly SDK downloads.",
+      "relevance_score": 10,
+      "state": "active",
+      "references": [
+        {
+          "title": "Model Context Protocol - Specification",
+          "url": "https://modelcontextprotocol.io/specification/2025-11-25",
+          "type": "specification"
+        },
+        {
+          "title": "MCP joins the Agentic AI Foundation",
+          "url": "http://blog.modelcontextprotocol.io/posts/2025-12-09-mcp-joins-agentic-ai-foundation/",
+          "type": "announcement"
+        },
+        {
+          "title": "A Year of MCP: From Internal Experiment to Industry Standard",
+          "url": "https://www.pento.ai/blog/a-year-of-mcp-2025-review",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Donated to Agentic AI Foundation (Linux Foundation) December 2025; adopted by Anthropic, OpenAI, Google, Microsoft, AWS, Bloomberg; 97M monthly SDK downloads."
+    },
+    {
+      "id": 35,
+      "name": "Long-Running Tasks and Asynchronous Execution",
+      "category": "Execution",
+      "description": "MCP Tasks primitive, Azure async request-reply pattern, and frameworks for agents maintaining focus over 30+ hours on complex workflows.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "MCP Async Tasks: Building long-running workflows for AI Agents",
+          "url": "https://workos.com/blog/mcp-async-tasks-ai-agent-workflows",
+          "type": "blog_post"
+        },
+        {
+          "title": "Build Long-Running AI Agents on Azure App Service",
+          "url": "https://azure.github.io/AppService/2025/10/21/app-service-agent-framework.html",
+          "type": "guide"
+        },
+        {
+          "title": "Long-Running AI Agents and Task Decomposition 2026",
+          "url": "https://zylos.ai/research/2026-01-16-long-running-ai-agents",
+          "type": "research"
+        }
+      ],
+      "key_insight": "Claude Sonnet 4.5 maintains focus for 30+ hours in internal tests; MCP 2025-11-25 introduces Tasks primitive for call-now, fetch-later protocol."
+    },
+    {
+      "id": 36,
+      "name": "Reflection and Iterative Refinement Patterns",
+      "category": "Architecture",
+      "description": "Generate-critique-refine cycles with self-correction, process reward models, and inference-side protocols for quality improvement.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "The Reflection Pattern: Why Self-Reviewing AI Improves Quality",
+          "url": "https://qat.com/reflection-pattern-ai/",
+          "type": "article"
+        },
+        {
+          "title": "AI Trends 2026: Test-Time Reasoning and the Rise of Reflective Agents",
+          "url": "https://huggingface.co/blog/aufklarer/ai-trends-2026-test-time-reasoning-reflective-agen",
+          "type": "article"
+        },
+        {
+          "title": "Reflection Agent Pattern",
+          "url": "https://agent-patterns.readthedocs.io/en/stable/patterns/reflection.html",
+          "type": "documentation"
+        }
+      ],
+      "key_insight": "Process reward models give feedback on each reasoning step, not just final result; McKinsey 2025 report shows 64% of organizations say reflection significantly improves software engineering output."
+    },
+    {
+      "id": 37,
+      "name": "Semantic Kernel and Microsoft Agent Framework",
+      "category": "Architecture",
+      "description": "Production-ready merger of AutoGen and Semantic Kernel with 27K+ GitHub stars, Claude/GitHub Copilot SDK integrations, GA Q1 2026.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Semantic Kernel + AutoGen = Open-Source 'Microsoft Agent Framework'",
+          "url": "https://visualstudiomagazine.com/articles/2025/10/01/semantic-kernel-autogen--open-source-microsoft-agent-framework.aspx",
+          "type": "announcement"
+        },
+        {
+          "title": "Microsoft Agent Framework: The production-ready convergence",
+          "url": "https://cloudsummit.eu/blog/microsoft-agent-framework-production-ready-convergence-autogen-semantic-kernel",
+          "type": "article"
+        },
+        {
+          "title": "Semantic Kernel Roadmap H1 2025",
+          "url": "https://devblogs.microsoft.com/semantic-kernel/semantic-kernel-roadmap-h1-2025-accelerating-agents-processes-and-integration/",
+          "type": "roadmap"
+        }
+      ],
+      "key_insight": "Framework integrates with Claude Agent SDK and GitHub Copilot SDK; 27,338 GitHub stars; GA scheduled for Q1 2026 with production SLAs."
+    },
+    {
+      "id": 38,
+      "name": "AI Coding Agents and Development Automation",
+      "category": "Applications",
+      "description": "Autonomous coding agents including OpenAI Codex, Claude Code, Cursor, achieving 25-30% productivity boosts with multi-file changes and test running.",
+      "relevance_score": 9,
+      "state": "mature",
+      "references": [
+        {
+          "title": "2026 Agentic Coding Trends Report",
+          "url": "https://resources.anthropic.com/hubfs/2026%20Agentic%20Coding%20Trends%20Report.pdf",
+          "type": "report"
+        },
+        {
+          "title": "Best AI Coding Agents for 2026: Real-World Developer Reviews",
+          "url": "https://www.faros.ai/blog/best-ai-coding-agents-2026",
+          "type": "review"
+        },
+        {
+          "title": "AI Coding Agents 2026: The New Frontier of Intelligent Development",
+          "url": "https://codeagni.com/blog/ai-coding-agents-2026-the-new-frontier-of-intelligent-development-workflows",
+          "type": "article"
+        }
+      ],
+      "key_insight": "85% of developers regularly use AI tools; OpenAI Codex powered by codex-1 (o3 optimized for software engineering); teams report 25-30% productivity boosts."
+    },
+    {
+      "id": 39,
+      "name": "Agent Evaluation and Testing Infrastructure",
+      "category": "Evaluation",
+      "description": "Multi-layer evaluation libraries measuring final output, component-level performance, and underlying LLM behavior with production monitoring.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Evaluating AI agents: Real-world lessons from building agentic systems at Amazon",
+          "url": "https://aws.amazon.com/blogs/machine-learning/evaluating-ai-agents-real-world-lessons-from-building-agentic-systems-at-amazon/",
+          "type": "blog_post"
+        },
+        {
+          "title": "AI Agent Performance Measurement: Redefining Excellence",
+          "url": "https://www.microsoft.com/en-us/dynamics-365/blog/it-professional/2026/02/04/ai-agent-performance-measurement/",
+          "type": "blog_post"
+        },
+        {
+          "title": "7 Emerging Trends in Agentic Evaluation",
+          "url": "https://medium.com/@carinaclaassen13/7-emerging-trends-in-agentic-evaluation-920fdc30eb14",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Evaluation operates across three layers: final output metrics, component assessment (intent detection, tool-use), and underlying LLM performance measurement."
+    },
+    {
+      "id": 40,
+      "name": "Production Agent Deployment Patterns",
+      "category": "Execution",
+      "description": "Real-world deployment strategies with checkpoints, escalation paths, human oversight, and production-grade observability from early adopters.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Top 5 AI agents 2026: production-ready solutions compared",
+          "url": "https://beam.ai/agentic-insights/top-5-ai-agents-in-2026-the-ones-that-actually-work-in-production",
+          "type": "comparison"
+        },
+        {
+          "title": "The 2025 AI Agent Report: Why AI Pilots Fail in Production",
+          "url": "https://composio.dev/blog/why-ai-agent-pilots-fail-2026-integration-roadmap",
+          "type": "report"
+        },
+        {
+          "title": "State of AI Agent Platforms in 2025: Comparative Analysis",
+          "url": "https://www.ionio.ai/blog/the-state-of-ai-agent-platforms-in-2025-comparative-analysis",
+          "type": "analysis"
+        }
+      ],
+      "key_insight": "Only 11% of organizations have agents in production by early 2026; success requires focus on tool design, grounding, explicit state, and observability."
+    },
+    {
+      "id": 41,
+      "name": "Agentic Workflow Architectures",
+      "category": "Architecture",
+      "description": "Taxonomy of workflow patterns: single agent, hierarchical multi-agent, sequential pipeline, and decentralized swarm with coordination strategies.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "The 2026 Guide to Agentic Workflow Architectures",
+          "url": "https://www.stackai.com/blog/the-2026-guide-to-agentic-workflow-architectures",
+          "type": "guide"
+        },
+        {
+          "title": "AI Agent Orchestration Patterns - Azure Architecture Center",
+          "url": "https://learn.microsoft.com/en-us/azure/architecture/ai-ml/guide/ai-agent-design-patterns",
+          "type": "documentation"
+        },
+        {
+          "title": "Agentic AI Orchestration in 2026: Automating Workflows at Scale",
+          "url": "https://onereach.ai/blog/agentic-ai-orchestration-enterprise-workflow-automation/",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Four primary patterns: single agent (simple tasks), hierarchical (complex coordination), sequential pipeline (repeatable processes), decentralized swarm (distributed problem-solving)."
+    },
+    {
+      "id": 42,
+      "name": "Multi-Agent System Market Growth",
+      "category": "Applications",
+      "description": "Market expanding from $7.84B (2025) to $52.62B (2030) at 46.3% CAGR; Gartner predicts 40% of enterprise apps will have agents by 2026.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "150+ AI Agent Statistics [2026]",
+          "url": "https://masterofcode.com/blog/ai-agent-statistics",
+          "type": "statistics"
+        },
+        {
+          "title": "AI agent trends for 2026: 7 shifts to watch",
+          "url": "https://www.salesmate.io/blog/future-of-ai-agents/",
+          "type": "article"
+        },
+        {
+          "title": "The State of AI Agents in 2026",
+          "url": "https://meditations.metavert.io/p/the-state-of-ai-agents-in-2026",
+          "type": "analysis"
+        }
+      ],
+      "key_insight": "Multi-agent system inquiries surged 1,445% between Q1 2024 and Q2 2025; 92% of businesses plan to increase AI investment in 2025."
+    },
+    {
+      "id": 43,
+      "name": "Agent Protocol Interoperability (MCP vs A2A)",
+      "category": "Coordination",
+      "description": "Competing standards for agent integration: MCP (agent-tool) and A2A (agent-agent) with emerging convergence patterns.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "MCP vs A2A: The Complete Guide to AI Agent Protocols in 2026",
+          "url": "https://dev.to/pockit_tools/mcp-vs-a2a-the-complete-guide-to-ai-agent-protocols-in-2026-30li",
+          "type": "guide"
+        },
+        {
+          "title": "MCP vs A2A: A Guide to AI Agent Communication Protocols",
+          "url": "https://auth0.com/blog/mcp-vs-a2a/",
+          "type": "article"
+        },
+        {
+          "title": "A Survey of Agent Interoperability Protocols",
+          "url": "https://arxiv.org/html/2505.02279v1",
+          "type": "research"
+        }
+      ],
+      "key_insight": "MCP focuses on agent-to-tool integration (Anthropic-led, 97M downloads); A2A enables agent-to-agent communication (Google/Linux Foundation, 50+ partners)."
+    },
+    {
+      "id": 44,
+      "name": "Enterprise Agent Governance Frameworks",
+      "category": "Governance",
+      "description": "Fine-grained permissions, sandboxing, audit logs, policy engines, and explainability features embedded in next-gen agent architectures.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Agentic AI Governance Frameworks 2026: Risks, Oversight, and Emerging Standards",
+          "url": "https://hackernoon.com/agentic-ai-governance-frameworks-2026-risks-oversight-and-emerging-standards",
+          "type": "article"
+        },
+        {
+          "title": "AI Regulation News: 2025 Global Changes, 2026 Watchlist",
+          "url": "https://atomicmail.io/blog/ai-regulation-news-global-changes-and-watchlist",
+          "type": "news"
+        }
+      ],
+      "key_insight": "Leading organizations design 'Enterprise Agentic Automation' combining dynamic AI execution with deterministic guardrails and human judgment at key decision points."
+    },
+    {
+      "id": 45,
+      "name": "Agent Resource Pooling and Runtime Management",
+      "category": "Execution",
+      "description": "Production patterns for managing agent pools, runtime isolation, compute allocation, and multi-tenant agent execution environments.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Top 7 AI agent runtime tools and platforms in 2026",
+          "url": "https://northflank.com/blog/top-ai-agent-runtime-tools",
+          "type": "comparison"
+        },
+        {
+          "title": "Agentic AI on Kubernetes and GKE",
+          "url": "https://cloud.google.com/blog/products/containers-kubernetes/agentic-ai-on-kubernetes-and-gke",
+          "type": "blog_post"
+        }
+      ],
+      "key_insight": "Kubernetes emerging as standard runtime platform; Agent Sandbox provides gVisor isolation for multi-tenant deployments at scale."
+    },
+    {
+      "id": 46,
+      "name": "Context Window Management and Compression",
+      "category": "Architecture",
+      "description": "Adaptive memory compression, context editing, and intelligent forgetting strategies to manage token limits in long-running conversations.",
+      "relevance_score": 8,
+      "state": "active",
+      "references": [
+        {
+          "title": "Beyond the Bubble: How Context-Aware Memory Systems Are Changing the Game in 2025",
+          "url": "https://www.tribe.ai/applied-ai/beyond-the-bubble-how-context-aware-memory-systems-are-changing-the-game-in-2025",
+          "type": "article"
+        },
+        {
+          "title": "Context Engineering for AI Agents Guide October 2025",
+          "url": "https://mem0.ai/blog/context-engineering-ai-agents-guide",
+          "type": "guide"
+        }
+      ],
+      "key_insight": "Claude Sonnet 4.5 (2025) automatically drops oldest tool outputs when approaching token limits, preserving dialogue flow while managing context."
+    },
+    {
+      "id": 47,
+      "name": "Multi-Modal Agent Systems",
+      "category": "Architecture",
+      "description": "Agents working across text, images, video, and audio simultaneously with integrated multimodal workflows for campaigns and content generation.",
+      "relevance_score": 8,
+      "state": "emerging",
+      "references": [
+        {
+          "title": "Top AI Prompts for Digital Agencies: The Complete 2026 Guide",
+          "url": "https://almcorp.com/blog/top-ai-prompts-digital-agencies-2026-guide/",
+          "type": "guide"
+        },
+        {
+          "title": "AgentOrchestra: A Hierarchical Multi-Agent Framework for General-Purpose Task Solving",
+          "url": "https://arxiv.org/html/2506.12508v1",
+          "type": "research"
+        }
+      ],
+      "key_insight": "Agencies using multimodal prompts to generate complete campaigns with copy, visuals, and video in integrated workflows; AgentOrchestra handles multimodal inputs."
+    },
+    {
+      "id": 48,
+      "name": "Agent Failure Modes and Recovery Patterns",
+      "category": "Execution",
+      "description": "Common failure patterns including context loss, tool misuse, hallucination cascades, and architectural solutions for graceful degradation.",
+      "relevance_score": 9,
+      "state": "active",
+      "references": [
+        {
+          "title": "Multi-Agent Coordination Gone Wrong? Fix With 10 Strategies",
+          "url": "https://galileo.ai/blog/multi-agent-coordination-strategies",
+          "type": "guide"
+        },
+        {
+          "title": "The 2025 AI Agent Report: Why AI Pilots Fail in Production",
+          "url": "https://composio.dev/blog/why-ai-agent-pilots-fail-2026-integration-roadmap",
+          "type": "report"
+        },
+        {
+          "title": "2025 Was Supposed to Be the Year of the Agent. It Never Arrived",
+          "url": "https://www.reworked.co/digital-workplace/2025-was-supposed-to-be-the-year-of-the-agent-it-never-arrived/",
+          "type": "article"
+        }
+      ],
+      "key_insight": "Agents frequently fail to maintain coherent context; Replit's AI deleted production database in July 2025 despite explicit instructions, highlighting reliability gaps."
+    }
+  ],
+  "summary": {
+    "total_execution_topics": 13,
+    "total_application_topics": 9,
+    "total_governance_topics": 6,
+    "total_architecture_topics": 13,
+    "total_coordination_topics": 5,
+    "total_evaluation_topics": 2,
+    "average_relevance_score": 8.9,
+    "state_distribution": {
+      "active": 37,
+      "emerging": 4,
+      "mature": 7
+    }
+  }
+}

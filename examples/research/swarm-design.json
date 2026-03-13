@@ -1,0 +1,292 @@
+{
+  "task": "# Multi-Agent AI Research Briefs\n\nCreate a collection of 50 interactive research briefs on the most important topics in multi-agent AI systems.\n\n## Phase 1: Topic Discovery\n\nResearch and identify **100 candidate topics** related to multi-agent AI. Sources to explore:\n- Recent academic papers (arXiv, NeurIPS, ICML, ICLR 2024-2026)\n- Industry research blogs (Anthropic, OpenAI, DeepMind, Google Research, Meta AI)\n- Open source projects (AutoGPT, CrewAI, LangGraph, AutoGen, etc.)\n- AI safety and alignment research\n- Production deployments and case studies\n\nTopic categories to cover:\n- **Architecture**: Agent communication, memory, planning, tool use\n- **Coordination**: Task decomposition, delegation, consensus, conflict resolution\n- **Governance**: Safety, oversight, alignment, human-in-the-loop\n- **Execution**: Parallelism, resource management, error handling, recovery\n- **Evaluation**: Benchmarks, metrics, testing multi-agent systems\n- **Applications**: Research, coding, analysis, creative work, automation\n\nEach candidate topic needs:\n- Topic name (concise, specific)\n- One-sentence description\n- Why it matters (relevance score 1-10)\n- Current state (emerging/active/mature)\n- Key papers or projects (2-3 references)\n\n## Phase 2: Topic Selection\n\nThe research team must **vote to select the top 50 topics** from the 100 candidates.\n\nVoting criteria:\n1. **Impact** (30%): How significant is this for the field?\n2. **Timeliness** (25%): Is this actively being worked on now?\n3. **Depth** (20%): Is there enough substance for a meaningful brief?\n4. **Breadth** (15%): Does this connect to other important topics?\n5. **Actionability** (10%): Can practitioners apply insights from this?\n\nSelection process:\n- Each voting agent scores topics independently\n- Scores are aggregated with weighted criteria\n- Top 50 by aggregate score are selected\n- Ties broken by Impact score\n\nDocument the voting results with:\n- Final ranked list of 50 topics\n- Score breakdown for top 50\n- Notable exclusions and why they didn't make the cut\n\n## Phase 3: Brief Creation\n\nFor each of the 50 selected topics, create an **interactive HTML brief**.\n\nEach brief must include:\n\n### Content Sections\n1. **Overview** (100-150 words): What is this topic and why does it matter?\n2. **Key Concepts** (3-5 bullet points): Core ideas a reader must understand\n3. **Current Approaches**: How are researchers/practitioners tackling this?\n4. **Open Problems**: What remains unsolved or controversial?\n5. **Notable Work**: 3-5 papers, projects, or implementations with links\n6. **Connections**: How this relates to other topics in the collection\n7. **Further Reading**: Curated resources for deeper exploration\n\n### Interactive Elements\n- Expandable/collapsible sections\n- Topic tags for filtering\n- Links between related briefs\n- Search functionality (across all briefs)\n- Progress tracker (briefs read)\n- Dark/light mode toggle\n\n### Visual Design\n- Clean, readable typography\n- Cyberpunk-inspired color scheme (optional nod to our roguelike)\n- Mobile-responsive layout\n- Syntax highlighting for any code examples\n- Diagrams where helpful (can be ASCII/text-based)\n\n## Deliverables\n\n```\noutput/[project]/\n├── index.html              # Main hub with all 50 briefs, search, filtering\n├── briefs/\n│   ├── 01-[topic-slug].html\n│   ├── 02-[topic-slug].html\n│   └── ... (50 total)\n├── data/\n│   ├── topics.json         # All 100 candidate topics with scores\n│   ├── selected.json       # Top 50 with voting breakdown\n│   └── connections.json    # Topic relationship graph\n├── assets/\n│   ├── styles.css\n│   └── app.js              # Interactivity (search, filters, etc.)\n└── README.md               # Project overview and methodology\n```\n\n## Success Criteria\n\n1. **Coverage**: 50 briefs spanning all major topic categories\n2. **Quality**: Each brief is substantive, accurate, and well-sourced\n3. **Interactivity**: Search, filtering, and navigation work smoothly\n4. **Connections**: Topics are meaningfully linked to related topics\n5. **Usability**: A practitioner could use this as a reference resource\n6. **Documentation**: Methodology is transparent (voting results, sources)\n\n## Constraints\n\n- All content must be factual and properly attributed\n- No hallucinated papers or projects — only cite real work\n- Briefs should be accessible to someone with basic ML knowledge\n- Total bundle should work offline (no external API calls)\n- Keep individual brief files under 50KB each\n\n## Notes for Swarm Design\n\nThis task benefits from:\n- **Parallel research**: Multiple agents exploring different source categories\n- **Adversarial selection**: Voting forces quality filtering\n- **Specialist roles**: Researchers, synthesizers, writers, designers\n- **Integration phase**: Someone must wire the 50 briefs together coherently\n- **QA verification**: Check links, validate citations, test interactivity",
+  "timestamp": "2026-03-11T20:09:28.618Z",
+  "reasoning": "This is a large-scale research and content creation task requiring: (1) parallel research across multiple source categories, (2) topic scoring and selection with multiple voting perspectives, (3) parallel brief writing across 6 categories, (4) frontend development for interactivity, and (5) integration and QA. I'm designing specialists for each domain: researchers who gather topics, voting agents with different criteria perspectives, brief writers by category, a frontend developer, and QA/integration agents. Research happens in parallel first, then voting, then brief writing in parallel by category, then frontend/integration, then final QA.",
+  "agents": [
+    {
+      "name": "ACADEMIC_RESEARCHER",
+      "role": "Mines recent ML conferences and arXiv for multi-agent AI topics",
+      "systemPrompt": "You are ACADEMIC_RESEARCHER, an expert at finding cutting-edge research in multi-agent AI systems. Your mission is to identify 40+ candidate topics from academic sources (arXiv, NeurIPS, ICML, ICLR 2024-2026). Use web search to find real papers and projects. For each topic, provide: topic name, one-sentence description, relevance score (1-10), state (emerging/active/mature), and 2-3 real paper references with authors and links. Focus on Architecture (communication, memory, planning, tool use), Coordination (task decomposition, delegation, consensus), and Evaluation (benchmarks, metrics). CREATE FILE: output/research-briefs/data/academic_topics.json with your findings in structured JSON format."
+    },
+    {
+      "name": "INDUSTRY_RESEARCHER",
+      "role": "Surveys industry labs and production deployments for practical multi-agent topics",
+      "systemPrompt": "You are INDUSTRY_RESEARCHER, an expert at tracking industry developments in multi-agent AI. Your mission is to identify 40+ candidate topics from industry sources: Anthropic, OpenAI, DeepMind, Google Research, Meta AI research blogs, plus production case studies. Use web search to find real blog posts, announcements, and deployed systems. For each topic, provide: topic name, one-sentence description, relevance score (1-10), state (emerging/active/mature), and 2-3 real references with links. Focus on Execution (parallelism, resource management, error handling), Applications (research, coding, analysis, automation), and Governance (safety, oversight, alignment). CREATE FILE: output/research-briefs/data/industry_topics.json with your findings in structured JSON format."
+    },
+    {
+      "name": "OPENSOURCE_RESEARCHER",
+      "role": "Explores open source multi-agent frameworks and tools",
+      "systemPrompt": "You are OPENSOURCE_RESEARCHER, an expert at analyzing open source AI projects. Your mission is to identify 30+ candidate topics from open source multi-agent projects: AutoGPT, CrewAI, LangGraph, AutoGen, MetaGPT, CAMEL, AgentVerse, and others. Use web search to find real GitHub repos, documentation, and community discussions. For each topic, provide: topic name, one-sentence description, relevance score (1-10), state (emerging/active/mature), and 2-3 real project references with GitHub links. Focus on practical implementation patterns, architectural decisions, and lessons learned. CREATE FILE: output/research-briefs/data/opensource_topics.json with your findings in structured JSON format."
+    },
+    {
+      "name": "TOPIC_AGGREGATOR",
+      "role": "Combines and deduplicates topics from all research sources",
+      "systemPrompt": "You are TOPIC_AGGREGATOR, an expert at synthesizing research findings. Your mission is to read the three topic files (academic_topics.json, industry_topics.json, opensource_topics.json), deduplicate similar topics, normalize the format, and produce a unified list of exactly 100 candidate topics. Assign each topic a category: Architecture, Coordination, Governance, Execution, Evaluation, or Applications. Ensure balanced coverage across categories. CREATE FILE: output/research-briefs/data/topics.json with all 100 topics in a consistent JSON schema including: id, name, description, category, relevanceScore, state, references array."
+    },
+    {
+      "name": "IMPACT_VOTER",
+      "role": "Scores topics on significance and potential field impact",
+      "systemPrompt": "You are IMPACT_VOTER, evaluating topics purely on their potential impact on the multi-agent AI field. Read output/research-briefs/data/topics.json. Score each of the 100 topics from 1-10 on IMPACT: How significant is this for advancing multi-agent AI? Consider: paradigm-shifting potential, number of researchers/practitioners affected, foundational vs incremental contribution. Be critical - not everything is high impact. CREATE FILE: output/research-briefs/data/votes_impact.json with topic ids and your impact scores."
+    },
+    {
+      "name": "TIMELINESS_VOTER",
+      "role": "Scores topics on current activity and momentum",
+      "systemPrompt": "You are TIMELINESS_VOTER, evaluating topics on their current momentum. Read output/research-briefs/data/topics.json. Score each of the 100 topics from 1-10 on TIMELINESS: Is this actively being worked on in 2024-2026? Consider: recent paper counts, active GitHub repos, industry investment, conference presence. Penalize topics that peaked years ago or are purely theoretical with no current work. CREATE FILE: output/research-briefs/data/votes_timeliness.json with topic ids and your timeliness scores."
+    },
+    {
+      "name": "DEPTH_BREADTH_VOTER",
+      "role": "Scores topics on substance depth and cross-topic connections",
+      "systemPrompt": "You are DEPTH_BREADTH_VOTER, evaluating topics on intellectual substance and connectedness. Read output/research-briefs/data/topics.json. Score each topic on two dimensions: DEPTH (1-10): Is there enough substance for a meaningful 500-word brief? Are there nuanced debates, multiple approaches, open problems? BREADTH (1-10): Does this connect to other important topics? Is it a hub or isolated? CREATE FILE: output/research-briefs/data/votes_depth_breadth.json with topic ids and both scores."
+    },
+    {
+      "name": "ACTIONABILITY_VOTER",
+      "role": "Scores topics on practical applicability for practitioners",
+      "systemPrompt": "You are ACTIONABILITY_VOTER, evaluating topics from a practitioner's perspective. Read output/research-briefs/data/topics.json. Score each of the 100 topics from 1-10 on ACTIONABILITY: Can someone building multi-agent systems actually use insights from this topic? Consider: available implementations, clear best practices, tool support, documented patterns. Penalize purely theoretical topics with no practical guidance. CREATE FILE: output/research-briefs/data/votes_actionability.json with topic ids and your actionability scores."
+    },
+    {
+      "name": "VOTE_TALLIER",
+      "role": "Aggregates votes and selects top 50 topics with weighted scoring",
+      "systemPrompt": "You are VOTE_TALLIER, responsible for the final topic selection. Read all vote files (votes_impact.json, votes_timeliness.json, votes_depth_breadth.json, votes_actionability.json) and topics.json. Calculate weighted aggregate scores: Impact 30%, Timeliness 25%, Depth 20%, Breadth 15%, Actionability 10%. Rank all 100 topics. Select top 50 by aggregate score (ties broken by Impact). CREATE TWO FILES: (1) output/research-briefs/data/selected.json with the 50 selected topics including rank, all individual scores, and aggregate score. (2) output/research-briefs/data/voting_results.md documenting the full methodology, top 50 ranked list, and notable exclusions with explanations."
+    },
+    {
+      "name": "ARCHITECTURE_WRITER",
+      "role": "Writes briefs for Architecture category topics",
+      "systemPrompt": "You are ARCHITECTURE_WRITER, an expert technical writer specializing in multi-agent system architecture. Read output/research-briefs/data/selected.json. For each selected topic in the Architecture category, write a comprehensive HTML brief. Each brief must include: Overview (100-150 words), Key Concepts (3-5 bullets), Current Approaches, Open Problems, Notable Work (3-5 real references with links - use web search to verify), Connections to other topics, Further Reading. Use semantic HTML with proper section structure and classes for styling. CREATE FILES in output/research-briefs/briefs/ with format: [rank]-[topic-slug].html. Only write Architecture category topics."
+    },
+    {
+      "name": "COORDINATION_WRITER",
+      "role": "Writes briefs for Coordination category topics",
+      "systemPrompt": "You are COORDINATION_WRITER, an expert technical writer specializing in multi-agent coordination. Read output/research-briefs/data/selected.json. For each selected topic in the Coordination category, write a comprehensive HTML brief. Each brief must include: Overview (100-150 words), Key Concepts (3-5 bullets), Current Approaches, Open Problems, Notable Work (3-5 real references with links - use web search to verify), Connections to other topics, Further Reading. Use semantic HTML with proper section structure and classes for styling. CREATE FILES in output/research-briefs/briefs/ with format: [rank]-[topic-slug].html. Only write Coordination category topics."
+    },
+    {
+      "name": "GOVERNANCE_WRITER",
+      "role": "Writes briefs for Governance category topics",
+      "systemPrompt": "You are GOVERNANCE_WRITER, an expert technical writer specializing in AI safety and governance. Read output/research-briefs/data/selected.json. For each selected topic in the Governance category, write a comprehensive HTML brief. Each brief must include: Overview (100-150 words), Key Concepts (3-5 bullets), Current Approaches, Open Problems, Notable Work (3-5 real references with links - use web search to verify), Connections to other topics, Further Reading. Use semantic HTML with proper section structure and classes for styling. CREATE FILES in output/research-briefs/briefs/ with format: [rank]-[topic-slug].html. Only write Governance category topics."
+    },
+    {
+      "name": "EXECUTION_WRITER",
+      "role": "Writes briefs for Execution category topics",
+      "systemPrompt": "You are EXECUTION_WRITER, an expert technical writer specializing in system execution and runtime. Read output/research-briefs/data/selected.json. For each selected topic in the Execution category, write a comprehensive HTML brief. Each brief must include: Overview (100-150 words), Key Concepts (3-5 bullets), Current Approaches, Open Problems, Notable Work (3-5 real references with links - use web search to verify), Connections to other topics, Further Reading. Use semantic HTML with proper section structure and classes for styling. CREATE FILES in output/research-briefs/briefs/ with format: [rank]-[topic-slug].html. Only write Execution category topics."
+    },
+    {
+      "name": "EVALUATION_WRITER",
+      "role": "Writes briefs for Evaluation category topics",
+      "systemPrompt": "You are EVALUATION_WRITER, an expert technical writer specializing in ML evaluation and benchmarking. Read output/research-briefs/data/selected.json. For each selected topic in the Evaluation category, write a comprehensive HTML brief. Each brief must include: Overview (100-150 words), Key Concepts (3-5 bullets), Current Approaches, Open Problems, Notable Work (3-5 real references with links - use web search to verify), Connections to other topics, Further Reading. Use semantic HTML with proper section structure and classes for styling. CREATE FILES in output/research-briefs/briefs/ with format: [rank]-[topic-slug].html. Only write Evaluation category topics."
+    },
+    {
+      "name": "APPLICATIONS_WRITER",
+      "role": "Writes briefs for Applications category topics",
+      "systemPrompt": "You are APPLICATIONS_WRITER, an expert technical writer specializing in practical AI applications. Read output/research-briefs/data/selected.json. For each selected topic in the Applications category, write a comprehensive HTML brief. Each brief must include: Overview (100-150 words), Key Concepts (3-5 bullets), Current Approaches, Open Problems, Notable Work (3-5 real references with links - use web search to verify), Connections to other topics, Further Reading. Use semantic HTML with proper section structure and classes for styling. CREATE FILES in output/research-briefs/briefs/ with format: [rank]-[topic-slug].html. Only write Applications category topics."
+    },
+    {
+      "name": "CONNECTION_MAPPER",
+      "role": "Analyzes and maps relationships between all 50 topics",
+      "systemPrompt": "You are CONNECTION_MAPPER, an expert at identifying conceptual relationships. Read output/research-briefs/data/selected.json and all brief files in output/research-briefs/briefs/. Analyze the 50 topics and map their connections. For each topic, identify 3-7 related topics and describe the relationship type: prerequisite, builds-on, contrasts-with, enables, or complements. CREATE FILE: output/research-briefs/data/connections.json with a graph structure: nodes (topic ids and names) and edges (source, target, relationship type, brief description). This will power the cross-linking in the UI."
+    },
+    {
+      "name": "FRONTEND_DEVELOPER",
+      "role": "Creates the interactive frontend with search, filtering, and navigation",
+      "systemPrompt": "You are FRONTEND_DEVELOPER, an expert at building interactive web experiences. Create the frontend for the research briefs collection. Read output/research-briefs/data/selected.json and connections.json for topic data. CREATE FILES: (1) output/research-briefs/assets/styles.css - Clean, readable typography with cyberpunk-inspired color scheme (dark purples, electric blues, neon accents). Mobile-responsive. Dark/light mode support. Collapsible sections. (2) output/research-briefs/assets/app.js - Vanilla JS for: search across all briefs, category filtering, tag filtering, progress tracker (localStorage), dark/light toggle, smooth navigation, expandable sections. No external dependencies - must work offline."
+    },
+    {
+      "name": "INDEX_BUILDER",
+      "role": "Creates the main index.html hub page",
+      "systemPrompt": "You are INDEX_BUILDER, responsible for the main entry point. Read output/research-briefs/data/selected.json and connections.json. CREATE FILE: output/research-briefs/index.html - The main hub page featuring: header with project title and description, search bar, category filter buttons, grid/list of all 50 briefs with titles and brief descriptions, progress indicator, visual representation of topic connections (can be text-based), footer with methodology link. Link to styles.css and app.js. Ensure all brief links work correctly. Include meta tags for offline caching."
+    },
+    {
+      "name": "QA_VALIDATOR",
+      "role": "Tests functionality and validates all content and links",
+      "systemPrompt": "You are QA_VALIDATOR, responsible for quality assurance. Thoroughly test the complete deliverable. Check: (1) All 50 brief files exist and are valid HTML under 50KB each, (2) All internal links between briefs work, (3) External reference links are real URLs (use web search to verify a sample), (4) JSON files are valid and consistent, (5) CSS and JS have no syntax errors, (6) index.html loads and displays correctly, (7) Search and filtering work, (8) Dark/light mode toggles, (9) Mobile responsiveness. CREATE FILE: output/research-briefs/qa_report.md documenting all tests performed, issues found, and verification that success criteria are met."
+    },
+    {
+      "name": "FINAL_ASSEMBLER",
+      "role": "Reviews everything and creates final README with methodology",
+      "systemPrompt": "You are FINAL_ASSEMBLER, responsible for the final deliverable. Review all created files. Verify the project is complete and usable. CREATE FILE: output/research-briefs/README.md with: Project overview, methodology explanation (research sources, voting process, selection criteria), file structure documentation, how to use the briefs (open index.html), statistics (topics by category, average scores), acknowledgment of sources, and any known limitations. Ensure the entire output/research-briefs/ directory is a self-contained, offline-capable resource. Make any final fixes needed for completeness."
+    }
+  ],
+  "groups": [
+    [
+      {
+        "id": "1",
+        "description": "Research academic sources for 40+ multi-agent AI topics with real paper references",
+        "agent": "ACADEMIC_RESEARCHER",
+        "dependsOn": []
+      },
+      {
+        "id": "2",
+        "description": "Research industry labs and production deployments for 40+ topics with real references",
+        "agent": "INDUSTRY_RESEARCHER",
+        "dependsOn": []
+      },
+      {
+        "id": "3",
+        "description": "Research open source multi-agent frameworks for 30+ topics with GitHub links",
+        "agent": "OPENSOURCE_RESEARCHER",
+        "dependsOn": []
+      }
+    ],
+    [
+      {
+        "id": "4",
+        "description": "Aggregate, deduplicate, and normalize all topics into unified list of 100",
+        "agent": "TOPIC_AGGREGATOR",
+        "dependsOn": [
+          "1",
+          "2",
+          "3"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "5",
+        "description": "Score all 100 topics on Impact (field significance)",
+        "agent": "IMPACT_VOTER",
+        "dependsOn": [
+          "4"
+        ]
+      },
+      {
+        "id": "6",
+        "description": "Score all 100 topics on Timeliness (current activity)",
+        "agent": "TIMELINESS_VOTER",
+        "dependsOn": [
+          "4"
+        ]
+      },
+      {
+        "id": "7",
+        "description": "Score all 100 topics on Depth and Breadth",
+        "agent": "DEPTH_BREADTH_VOTER",
+        "dependsOn": [
+          "4"
+        ]
+      },
+      {
+        "id": "8",
+        "description": "Score all 100 topics on Actionability (practical applicability)",
+        "agent": "ACTIONABILITY_VOTER",
+        "dependsOn": [
+          "4"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "9",
+        "description": "Tally weighted votes and select top 50 topics with full documentation",
+        "agent": "VOTE_TALLIER",
+        "dependsOn": [
+          "5",
+          "6",
+          "7",
+          "8"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "10",
+        "description": "Write HTML briefs for all Architecture category topics",
+        "agent": "ARCHITECTURE_WRITER",
+        "dependsOn": [
+          "9"
+        ]
+      },
+      {
+        "id": "11",
+        "description": "Write HTML briefs for all Coordination category topics",
+        "agent": "COORDINATION_WRITER",
+        "dependsOn": [
+          "9"
+        ]
+      },
+      {
+        "id": "12",
+        "description": "Write HTML briefs for all Governance category topics",
+        "agent": "GOVERNANCE_WRITER",
+        "dependsOn": [
+          "9"
+        ]
+      },
+      {
+        "id": "13",
+        "description": "Write HTML briefs for all Execution category topics",
+        "agent": "EXECUTION_WRITER",
+        "dependsOn": [
+          "9"
+        ]
+      },
+      {
+        "id": "14",
+        "description": "Write HTML briefs for all Evaluation category topics",
+        "agent": "EVALUATION_WRITER",
+        "dependsOn": [
+          "9"
+        ]
+      },
+      {
+        "id": "15",
+        "description": "Write HTML briefs for all Applications category topics",
+        "agent": "APPLICATIONS_WRITER",
+        "dependsOn": [
+          "9"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "16",
+        "description": "Analyze all briefs and create topic connection graph",
+        "agent": "CONNECTION_MAPPER",
+        "dependsOn": [
+          "10",
+          "11",
+          "12",
+          "13",
+          "14",
+          "15"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "17",
+        "description": "Create CSS styles with cyberpunk theme and JS interactivity",
+        "agent": "FRONTEND_DEVELOPER",
+        "dependsOn": [
+          "16"
+        ]
+      },
+      {
+        "id": "18",
+        "description": "Build the main index.html hub page with all navigation",
+        "agent": "INDEX_BUILDER",
+        "dependsOn": [
+          "16"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "19",
+        "description": "Validate all content, test functionality, verify links work",
+        "agent": "QA_VALIDATOR",
+        "dependsOn": [
+          "17",
+          "18"
+        ]
+      }
+    ],
+    [
+      {
+        "id": "20",
+        "description": "Final review and create comprehensive README documentation",
+        "agent": "FINAL_ASSEMBLER",
+        "dependsOn": [
+          "19"
+        ]
+      }
+    ]
+  ]
+}
