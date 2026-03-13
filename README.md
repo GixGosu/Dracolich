@@ -88,7 +88,7 @@ src/
 
 ```bash
 npm install
-npx tsx src/index.ts --file prompts/minecraft-from-scratch.md
+npx tsx src/index.ts --file examples/prompts/minecraft-from-scratch.md
 ```
 
 Or with a direct task:
