@@ -197,7 +197,7 @@ Rate limiting is non-negotiable. We learned that the hard way.
 
 One prompt: *"Build Minecraft from scratch."* No engine. No voxel libraries.
 
-The swarm chose Rust + raw OpenGL on its own. Produced 60 source files, 16,627 lines of code, across 11 modules. Two human fixes total.
+The prompt specified Rust + raw OpenGL with no game engine. The swarm produced 60 source files, 16,627 lines of code, across 11 modules. Two human fixes total.
 
 **Build 1** — First compile. The renderer runs but the shader pipeline is broken — everything renders as two-tone black and cyan silhouettes. But the geometry is there: voxel terrain, a crosshair, first-person camera. The structure works, the visuals don't.
 
