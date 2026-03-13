@@ -1,0 +1,66 @@
+# Dracolich — Default Configuration
+# Override per-run by passing config to DRACOLICH
+
+safety:
+  max_recursion_depth: 3
+  max_concurrent_agents: 10
+  max_total_agents_per_run: 50
+  human_approval_required:
+    depth_greater_than: 2
+    budget_greater_than_usd: 5.00
+    external_actions: true  # web posts, emails, etc.
+
+budget:
+  default_per_run_usd: null
+  hard_cap_usd: null
+  warn_at_percent: null
+  alert_at_percent: null
+  halt_at_percent: null
+
+rate_limits:
+  anthropic:
+    requests_per_minute: 50
+    tokens_per_minute: 200000
+    max_concurrent: 10
+  openai:
+    requests_per_minute: 60
+    tokens_per_minute: 300000
+    max_concurrent: 20
+  spawn_jitter_ms:
+    min: 100
+    max: 500
+
+governance:
+  arbiter:
+    max_revision_rounds: 3
+    auto_approve_atomic_tasks: true  # skip ARBITER for simple/atomic tasks
+    timeout_seconds: 60
+  sentinel:
+    max_retry_cycles: 2
+    force_accept_after_retries: true  # with caveats
+    timeout_seconds: 90
+  reaper:
+    max_iterations: 3
+    timeout_seconds: 180
+    min_findings_required: 1  # must find at least 1 issue
+
+execution:
+  checkpoint_after_each_phase: true
+  report_to_channel: "#swarm-ops"
+  phase_timeout_seconds:
+    decompose: 60
+    challenge: 120
+    research: 600
+    analysis: 300
+    adversarial: 180
+    build: 900
+    qa: 300
+    aggregate: 120
+
+models:
+  orchestrator: "claude-sonnet-4-20250514"  # fast for coordination
+  research: "claude-sonnet-4-20250514"
+  analysis: "claude-sonnet-4-20250514"
+  adversarial: "claude-sonnet-4-20250514"  # needs to be sharp
+  governance: "claude-sonnet-4-20250514"  # needs to be thorough
+  builder: "claude-sonnet-4-20250514"     # needs to code well
