@@ -141,6 +141,13 @@ Agents coordinate through a **shared filesystem + DAG sequencing**:
 2. **DAG-driven sequencing** — Group 1 agents run in parallel, their outputs feed into Group 2 agents as context, and so on.
 3. **Inter-agent documentation** — Agents spontaneously write handoff docs for downstream agents (e.g., `HANDOFF_WORLD_GENERATOR.md`, `MOB_INTEGRATION_GUIDE.md`). Nobody tells them to do this.
 
+## Prerequisites
+
+- **Node.js** (v18+)
+- **[Claude CLI](https://docs.anthropic.com/en/docs/claude-cli)** — installed and authenticated (`claude` must be available in your PATH)
+
+Dracolich spawns Claude CLI sessions for each agent — it does not call the Anthropic API directly. Your Claude CLI subscription covers the usage.
+
 ## Usage
 
 ```bash
@@ -233,3 +240,7 @@ MIT
 Built by [@brineshrimp](https://github.com/GixGosu) — Localization Automation Engineer at Epic Games, founder of BrineShrimp Games.
 
 The swarm that got banned, came back governed, and built itself.
+
+## See Also
+
+- **[AgentBoardroom](https://github.com/GixGosu/AgentBoardroom)** — The governance framework that informed Dracolich's architecture. 25 iterations of failure modes and fixes, documented in detail. If Dracolich is the engine, AgentBoardroom is the constitutional law it runs on.
