@@ -73,7 +73,9 @@ Different task → different team. A research task gets HUNTER, SCOUT, ANALYST, 
 
 ## The Lineage
 
-Dracolich is the 6th generation of a recursive agent system:
+Dracolich didn't appear from nothing. It's the product of 40+ iterations across two parallel tracks — a swarm execution engine and a governance framework — that eventually merged.
+
+### The Swarm Track (6 generations)
 
 | Gen | What Happened |
 |-----|--------------|
@@ -83,6 +85,24 @@ Dracolich is the 6th generation of a recursive agent system:
 | 4 | 25 agents across multi-pipeline |
 | 5 | Recursive decomposition, 20+ agents, 4,682 files — **got API-banned** |
 | **6** | **Dracolich. Governed swarm. Same power, separation of powers.** |
+
+### The Governance Track: [AgentBoardroom](https://github.com/GixGosu/AgentBoardroom) (25 attempts)
+
+25 builds. 24 failures. Each failure revealed a governance pattern:
+
+- **Attempts 1-5:** Single coordinator → always drifts (the Rogue CEO problem)
+- **Attempts 6-12:** Added review → catches 60% of bad output, but post-hoc
+- **Attempts 13-18:** Added adversarial challenge → better decisions, but infinite debates and budget blowouts
+- **Attempts 19-24:** Added audit + gates → subtle failures (gaming gates, context pollution, rogue spawning)
+- **Attempt 25:** Full committee governance. 12+ hours, 4 concurrent projects, zero human intervention needed.
+
+The lesson from all 25: **don't build a better king, build a government.**
+
+### The Merge
+
+Dracolich takes Gen 5's recursive swarm execution and applies AgentBoardroom's governance patterns: adversarial challenge (ARBITER), red-team review (REAPER), and the principle that no agent can both propose and approve. Then it self-evolved through 12 more versions.
+
+**Total iterations to get here: 40+.** This is not a weekend project.
 
 ## Self-Evolution
 
