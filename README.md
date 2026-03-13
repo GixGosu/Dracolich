@@ -2,7 +2,7 @@
 
 **1,824 lines of TypeScript that built a 16,627-line Rust voxel engine overnight.**
 
-Dracolich is a governed multi-agent swarm engine. Give it a task in plain English. It decomposes the problem into a dependency-aware execution graph, spins up specialized AI agents in parallel, and enforces adversarial governance at every fork and merge.
+Dracolich is a governed multi-agent swarm engine. Give it a task in plain English. It decomposes the problem into a dependency-aware execution graph, designs its own team of specialized agents, runs them in parallel, and enforces adversarial governance at every stage.
 
 No agent can both propose and approve. Every decomposition gets challenged. Every output gets reviewed. The swarm goes fast but can't go wrong fast.
 
@@ -11,15 +11,15 @@ No agent can both propose and approve. Every decomposition gets challenged. Ever
 ```
 "Build Minecraft from scratch"
          ↓
-   [META_DECOMPOSER] → breaks task into dependency DAG
+   [META_DECOMPOSER] → breaks task into dependency DAG, designs agent team
          ↓
-   [ARBITER] → challenges the decomposition
+   [ARBITER] → challenges the decomposition — is this plan sane?
          ↓
-   Parallel agent teams execute task groups
+   Dynamically-created agent teams execute in parallel groups
          ↓
-   [SENTINEL] → quality gate on each output
+   [REAPER] → adversarial red-team review of final output
          ↓
-   [REAPER] → adversarial red-team review
+   [REVISER/FIXER] → improvement loop if REAPER finds issues
          ↓
    Final output → your project directory
 ```
@@ -30,6 +30,46 @@ One prompt produced:
 - Procedural terrain with caves, trees, ore veins, water
 - First-person movement, jumping, collision detection
 - 48 inter-agent documentation files the agents wrote for *each other*
+
+## How Agents Work
+
+Dracolich has **5 fixed engine-level agents** and creates **unlimited task-specific agents** on the fly.
+
+### Fixed Agents (hardcoded in the engine)
+
+| Agent | Job |
+|-------|-----|
+| META_DECOMPOSER | Analyzes the task, designs a dependency DAG, and invents a custom agent team |
+| ARBITER | Reviews the META_DECOMPOSER's plan before any execution begins |
+| REAPER | Adversarial red-team review of the final output |
+| REVISER | Rewrites output based on REAPER's critique |
+| FIXER | Applies file-level fixes in the project directory |
+
+### Dynamic Agents (created per task)
+
+The META_DECOMPOSER designs a custom team for every task. For "Build Minecraft from scratch," it invented 17 agents:
+
+```
+PROJECT_ARCHITECT    → Cargo.toml, module structure, core types
+SHADER_ENGINEER      → All GLSL shaders
+OPENGL_RENDERER      → OpenGL rendering backend, mesh systems
+WINDOW_MANAGER       → Windowing, input handling, game loop
+WORLD_GENERATOR      → Procedural terrain with noise functions
+CHUNK_SYSTEM         → Chunk storage, loading, meshing
+PHYSICS_ENGINE       → Collision detection, physics simulation
+PLAYER_CONTROLLER    → First-person movement, health, interaction
+INVENTORY_CRAFTER    → Inventory and crafting systems
+MOB_DEVELOPER        → Mob AI, spawning, combat
+UI_DEVELOPER         → All 2D UI elements
+AUDIO_ENGINEER       → Sound effects and ambient audio
+INTEGRATION_ENGINEER → Wires all systems together
+TEXTURE_ARTIST       → Texture atlas and block definitions
+DOCUMENTATION_WRITER → Architecture docs and guides
+QA_VALIDATOR         → Code review for correctness and safety
+FINAL_ASSEMBLER      → Final review and deliverable assembly
+```
+
+Different task → different team. A research task gets HUNTER, SCOUT, ANALYST, VERIFIER agents instead. The engine doesn't know what agents it'll need until it sees the task.
 
 ## The Lineage
 
@@ -58,31 +98,24 @@ Dracolich wrote itself. The `evolve.sh` script runs self-improvement loops:
 ```
 src/
 ├── index.ts          — Entry point & CLI
-├── decomposer.ts     — Task → dependency DAG
-├── orchestrator.ts   — DAG execution engine
-├── governance.ts     — ARBITER + SENTINEL + REAPER gates
-├── pool.ts           — Agent execution pool & concurrency
-├── prompts.ts        — Agent prompt templates
-├── constants.ts      — Token limits, budgets, config
+├── decomposer.ts     — META_DECOMPOSER: task → dependency DAG + agent team design
+├── orchestrator.ts   — DAG execution engine, parallel group runner
+├── governance.ts     — ARBITER challenge gate, REAPER review, REVISER/FIXER loop
+├── pool.ts           — Claude CLI execution pool with retry logic
+├── prompts.ts        — Loads fixed agent prompts from agents/ directory
+├── constants.ts      — Timeouts, token limits, governance defaults
 ├── types.ts          — Type definitions
 ├── test.ts           — 23 tests
 └── utils/            — File ops, formatting, JSON parsing
 ```
 
-### Agent Roles
+### How Agents Communicate
 
-| Agent | Layer | Job |
-|-------|-------|-----|
-| DRACOLICH | Command | Meta-orchestrator. Decomposes tasks, builds DAGs |
-| WARDEN | Command | Monitor + circuit breaker. Token budgets, kill switch |
-| ARBITER | Governance | Reviews decompositions before execution begins |
-| SENTINEL | Governance | Reviews outputs before aggregation |
-| REAPER | Adversarial | Red team. Challenges assumptions, finds gaps |
-| HUNTER | Research | Deep research, citation chasing |
-| SCOUT | Research | Breadth research, contrarian perspectives |
-| ARCHITECT | Builder | Designs implementation plans |
-| BUILDER | Builder | Code/doc generation, one per sub-task |
-| QA | Builder | Testing and validation |
+Agents coordinate through a **shared filesystem + DAG sequencing**:
+
+1. **Shared project directory** — All agents write to the same output folder. Each agent reads what prior agents produced.
+2. **DAG-driven sequencing** — Group 1 agents run in parallel, their outputs feed into Group 2 agents as context, and so on.
+3. **Inter-agent documentation** — Agents spontaneously write handoff docs for downstream agents (e.g., `HANDOFF_WORLD_GENERATOR.md`, `MOB_INTEGRATION_GUIDE.md`). Nobody tells them to do this.
 
 ## Usage
 
@@ -99,6 +132,13 @@ npx tsx src/index.ts "Build a CLI tool that converts CSV to JSON with streaming 
 
 Output lands in `./output/<timestamp>-<task-slug>/`.
 
+### Options
+
+```bash
+npx tsx src/index.ts "task" --fail-fast    # Abort on first agent failure
+npx tsx src/index.ts "task" --verbose      # Show full REAPER review output
+```
+
 ### Self-Improvement
 
 ```bash
@@ -106,16 +146,19 @@ chmod +x evolve.sh
 ./evolve.sh  # Runs up to 8 hours, improving itself each iteration
 ```
 
-## Safety Constraints
+## Safety
 
-These are non-negotiable:
+Configured in `config/defaults.yaml`:
 
-1. **Max recursion depth: 3** — decompose → sub-decompose → micro-task, no deeper
-2. **Configurable concurrent agent limit** — starts at 10
-3. **Token budget per run** — estimated before execution, hard cap enforced
-4. **Human approval** — required for depth > 2 or budget overruns
-5. **Kill switch** — one command stops everything
-6. **Rate limiting** — provider-aware, learned the hard way
+- **Max recursion depth: 3** — decompose → sub-decompose → micro-task, no deeper
+- **Max concurrent agents: 10** (configurable)
+- **Max agents per run: 50** (configurable)
+- **Rate limiting** — per-provider request/token limits with jitter between spawns
+- **Timeouts** — 3-hour max per agent, 30-min max for governance, per-phase timeouts
+- **Fail-fast mode** — `--fail-fast` flag aborts on first agent failure
+- **ARBITER rejection** — if the plan is bad, execution doesn't start
+
+Rate limiting is non-negotiable. We learned that the hard way.
 
 ## Capability Demos
 
@@ -149,11 +192,13 @@ Specialists going deep on each domain beat one generalist going wide across all 
 
 ## Configuration
 
-Edit `config/defaults.yaml` for:
-- Max concurrency
-- Token budgets
-- Recursion depth limits
-- Model selection
+`config/defaults.yaml` controls:
+
+- **Safety** — recursion depth, concurrency, agent limits
+- **Rate limits** — per-provider (Anthropic, OpenAI) request/token/concurrency limits
+- **Governance** — ARBITER revision rounds, REAPER iteration limits, timeouts
+- **Execution** — phase timeouts, checkpoint behavior, reporting channel
+- **Models** — which Claude model each role uses (orchestrator, research, governance, builder)
 
 ## License
 
