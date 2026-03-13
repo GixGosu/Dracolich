@@ -120,10 +120,32 @@ These are non-negotiable:
 ## Capability Demos
 
 ### Minecraft Clone (Rust + Raw OpenGL)
-One prompt → 16,627 lines → playable voxel world with terrain, water, ore, trees. Two human fixes total.
+
+One prompt: *"Build Minecraft from scratch."* No engine. No voxel libraries.
+
+The swarm chose Rust + raw OpenGL on its own. Produced 60 source files, 16,627 lines of code, across 11 modules. Two human fixes total.
+
+**Build 1** — First compile. It crashes.
+
+![Build 1](images/Build1.png)
+
+**Build 5** — Two fixes later. Textured blocks, procedural terrain, water with transparency, ore veins in cave walls, trees, distance fog. Most of this was built in the first pass — we just couldn't see it until mouse look was fixed and we turned the camera around.
+
+![Build 5](images/Build5.png)
+
+The swarm also generated 48 markdown documents — architecture guides, handoff docs, integration specs — that the agents wrote *for each other* during development. Nobody told them to do this.
 
 ### Cyberpunk Roguelike
-Swarm vs solo Claude, same prompt. Swarm: 38 files, 8,600 lines, working AI/combat/items. Solo: 1 file, 912 lines, only movement worked. Specialists going deep > one generalist going wide.
+
+Same prompt given to the swarm and to solo Claude. Results:
+
+| | Dracolich (Swarm) | Claude (Solo) |
+|---|---|---|
+| Files | 38 | 1 |
+| Lines of code | 8,600 | 912 |
+| What actually worked | Enemy AI, pathfinding, FOV, combat, items | Only movement |
+
+Specialists going deep on each domain beat one generalist going wide across all of them.
 
 ## Configuration
 
