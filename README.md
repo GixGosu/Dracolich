@@ -121,7 +121,7 @@ src/
 ├── decomposer.ts     — META_DECOMPOSER: task → dependency DAG + agent team design
 ├── orchestrator.ts   — DAG execution engine, parallel group runner
 ├── governance.ts     — ARBITER challenge gate, REAPER review, REVISER/FIXER loop
-├── pool.ts           — Claude CLI execution pool with retry logic
+├── pool.ts           — Execution pool: spawns Claude CLI processes with retry logic
 ├── prompts.ts        — Loads fixed agent prompts from agents/ directory
 ├── constants.ts      — Timeouts, token limits, governance defaults
 ├── types.ts          — Type definitions
@@ -188,13 +188,13 @@ One prompt: *"Build Minecraft from scratch."* No engine. No voxel libraries.
 
 The swarm chose Rust + raw OpenGL on its own. Produced 60 source files, 16,627 lines of code, across 11 modules. Two human fixes total.
 
-**Build 1** — First compile. It crashes.
+**Build 1** — First compile. The renderer runs but the shader pipeline is broken — everything renders as two-tone black and cyan silhouettes. But the geometry is there: voxel terrain, a crosshair, first-person camera. The structure works, the visuals don't.
 
 ![Build 1](images/Build1.png)
 
-**Build 5** — Two fixes later. Really the same as Build 3 but with working mouse look — once we could actually turn the camera around, we discovered the swarm had already built water with transparency, ore veins in cave walls, varied terrain, and more. It was all there the whole time. We were judging the output through a keyhole.
+**Build 3** — Two fixes later. Textured blocks, trees, terrain variety. Then we fixed mouse look and turned the camera around — discovered the swarm had already built water with transparency, ore veins in cave walls, and more. It was all there the whole time. We were judging the output through a keyhole.
 
-![Build 5](images/Build5.png)
+![Build 3](images/Build3.png)
 
 The swarm also generated 48 markdown documents — architecture guides, handoff docs, integration specs — that the agents wrote *for each other* during development. Nobody told them to do this.
 
