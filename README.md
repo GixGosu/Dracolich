@@ -226,7 +226,7 @@ Specialists going deep on each domain beat one generalist going wide across all 
 `config/defaults.yaml` controls:
 
 - **Safety** — recursion depth, concurrency, agent limits
-- **Rate limits** — per-provider (Anthropic, OpenAI) request/token/concurrency limits
+- **Rate limits** — request/token/concurrency limits with spawn jitter
 - **Governance** — ARBITER revision rounds, REAPER iteration limits, timeouts
 - **Execution** — phase timeouts, checkpoint behavior, reporting channel
 - **Models** — which Claude model each role uses (orchestrator, research, governance, builder)
