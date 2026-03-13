@@ -6,7 +6,7 @@ import { fileURLToPath } from 'url';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = dirname(__filename);
-const AGENTS_DIR = join(__dirname, '../../agents');
+const AGENTS_DIR = join(__dirname, '../agents');
 
 function loadAgentPrompt(agentName: string): string {
   const filePath = join(AGENTS_DIR, `${agentName}.md`);
